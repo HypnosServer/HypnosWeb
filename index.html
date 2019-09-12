@@ -9,7 +9,7 @@
   gtag('js', new Date());
   gtag('config', 'UA-146642276-1');
 </script>
-<title>Sean Co. - Craft</title>
+<title>LastCraft</title>
 <link rel="icon" href="https://raw.githubusercontent.com/IAmNotCreative21/SeanCo/master/images/SeanCo.PNG">
 </head>
 <style>
@@ -35,6 +35,23 @@
 * {
 font: 40px Trebuchet MS;
 }  
+   <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <div class="server-status">
+      ServerA Status <span class="server-online"></span>!
+    </div>
+    <script>
+      MinecraftAPI.getServerStatus('lastcraft.us.to', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          return document.querySelector('.server-status').innerHTML = 'Server is Currently Down';
+        }
+
+        // you can change these to your own message!
+        document.querySelector('.server-online').innerHTML = status.online ? 'CurrentlyOnline' : 'CurrentlyDown';
+      });
+    </script>
+
 .youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
   overflow: hidden;
@@ -153,6 +170,9 @@ background-image: url("images/bloackchain.png"); background-color: #cccccc;
 <h2 style="font-size:15px">120GB ssd</h2>
 <h2 style="font-size:15px">Gigabyte ethernet link</h2>
 <h2 style="font-size:15px">Ubuntu Gnome</h2>
+    <div class="server-status">
+       https://mcapi.us/server/image?ip=lastcraft.us.to
+       </div>
     <p>
 <a style="font-size:30px"href="mcrules" target="_self">Rules/Commands</a>
        </p>
