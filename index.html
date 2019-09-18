@@ -12,6 +12,20 @@
 <title>LastCraft</title>
 <link rel="icon" href="images/lastcraftlogo.png">
 <link rel="stylesheet" href="style.css">
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script>
+      MinecraftAPI.getServerStatus('lastcraft.us.to', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          return document.querySelector('.server-status').innerHTML = 'Server is Currently Down';
+        }
+
+        // you can change these to your own message!
+        
+      });
+    </script>
+
 </head>
 
 <body>
