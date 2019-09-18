@@ -18,11 +18,17 @@
         port: 25565 // optional, only if you need a custom port
       }, function (err, status) {
         if (err) {
-          return document.querySelector('.server-status').innerHTML = 'Server is Currently Down';
+          
         }
-
+		console.log(status.players.now);
+		var motd = status.motd;
+		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
+		favicon = status.favicon;
+		console.log(motd);
+		document.getElementById("statusfavicon").href = favicon;
+		console.log(favicon);
         // you can change these to your own message!
-        
+       
       });
     </script>
 
@@ -67,6 +73,10 @@
       <div class="boxeddiscord">
 <h1 style="font-size:40px">Discord Server</h1>
 <p><iframe src="https://discordapp.com/widget?id=612057710543896596&theme=dark" width="400" height="500" allowtransparency="true" frameborder="0"></iframe></p>
+</div>
+      <div class="boxeddiscord">
+<h1 style="font-size:40px">Server Status</h1>
+<p><image id="statusfavicon" href="" alt="Logo"/></p>
 </div>
 
    <div class="boxedcopyright">
