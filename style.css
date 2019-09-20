@@ -26,6 +26,7 @@ font: 40px Trebuchet MS;
   background-color: #333;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
 }
 .navbar a {
