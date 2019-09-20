@@ -64,9 +64,8 @@ font: 40px Trebuchet MS;
   .boxedlogo{
   background-color: #27292b;
   width: 128px;
-    padding: 5px;
    margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .boxeddiscord{
   background-color: #27292b;
