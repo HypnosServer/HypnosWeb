@@ -1,5 +1,5 @@
-# LastCraftServer.github.io
-The LastCraftServer website: LastCraftServer.github.io 
+# LastMc.us.to
+
 Currently under development
 Discord: https://discord.gg/Eb2DGHq 
 DM: NotCreative#9884
