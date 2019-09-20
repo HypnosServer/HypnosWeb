@@ -34,7 +34,6 @@ font: 40px Trebuchet MS;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -75,6 +74,7 @@ font: 40px Trebuchet MS;
   background-color: #27292b;
   width: 128px;
    margin: auto;
+    
   border-radius: 5px;
 }
 .boxeddiscord{
