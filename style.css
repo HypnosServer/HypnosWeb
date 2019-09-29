@@ -98,7 +98,7 @@ font: 40px Trebuchet MS;
   text-align: center;
 }
 .moto {
-  transform: translateY(50px);
+  transform: translateY(65px);
   text-align: center;
   -webkit-transform: rotate(3deg);
 }
