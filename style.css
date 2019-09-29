@@ -96,12 +96,7 @@ font: 40px Trebuchet MS;
 .logo {
   transform: translateY(80px);
   text-align: center;
-}
-.moto {
-  transform: translateY(100px);
-  text-align: center;
-  -webkit-transform: rotate(2deg);
-}
+
 
 .boxeddiscord{
   background-color: #27292b;
@@ -128,8 +123,12 @@ p {
   color: white;
 }
 @import "compass/css3";
-.flash {
-    animation-name: flash;
+}
+.moto {
+  text-align: center;
+  line-height: 2em;
+  -webkit-transform: rotate(2deg);
+      animation-name: flash;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
