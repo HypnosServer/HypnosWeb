@@ -98,9 +98,9 @@ font: 40px Trebuchet MS;
   text-align: center;
 }
 .moto {
-  transform: translateY(40px);
+  transform: translateY(50px);
   text-align: center;
-  -webkit-transform: rotate(5deg);
+  -webkit-transform: rotate(3deg);
 }
 
 .boxeddiscord{
