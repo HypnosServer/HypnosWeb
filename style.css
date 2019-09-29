@@ -91,6 +91,11 @@ font: 40px Trebuchet MS;
     
   border-radius: 5px;
 }
+.logo {
+  transform: translateY(20%);
+  text-align: center;
+}
+
 .boxeddiscord{
   background-color: #27292b;
   width: 420px;
