@@ -37,6 +37,20 @@ font: 40px Trebuchet MS;
   text-decoration: none;
   font-size: 17px;
 }
+.round {
+    width: 48px;
+    height: 48px;
+
+    overflow: hidden;
+    border-radius: 15px;
+}
+.biground {
+    width: 128px;
+    height: 128px;
+
+    overflow: hidden;
+    border-radius: 30px;
+}
 .navbar a {
   float: left;
   display: block;
