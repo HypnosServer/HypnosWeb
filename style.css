@@ -56,9 +56,9 @@ font: 40px Trebuchet MS;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 2% 1%;
+  padding: 16px 17px;
   text-decoration: none;
-  font-size: 85%;
+  font-size: 55%;
   vertical-align: center;
 }
 .navbar a:hover {
