@@ -126,7 +126,7 @@ p {
 }
 .moto {
   text-align: center;
-  line-height: 2em;
+  line-height: 4em;
   -webkit-transform: rotate(2deg);
       animation-name: flash;
     animation-duration: 2s;
