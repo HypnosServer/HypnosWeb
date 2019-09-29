@@ -97,6 +97,10 @@ font: 40px Trebuchet MS;
   transform: translateY(80px);
   text-align: center;
 }
+.moto {
+  transform: translateY(20px);
+  text-align: center;
+}
 
 .boxeddiscord{
   background-color: #27292b;
