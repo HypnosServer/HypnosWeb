@@ -38,8 +38,8 @@ font: 40px Trebuchet MS;
   font-size: 17px;
 }
 .round {
-    width: 48px;
-    height: 48px;
+    width: 64px
+    height: 64px;
 
     overflow: hidden;
     border-radius: 15px;
@@ -58,7 +58,8 @@ font: 40px Trebuchet MS;
   text-align: center;
   padding: 2% 1%;
   text-decoration: none;
-  font-size: 45%;
+  font-size: 85%;
+  vertical-align: center;
 }
 .navbar a:hover {
   background: #f1f1f1;
