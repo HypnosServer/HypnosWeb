@@ -8,7 +8,7 @@
   border-radius: 5px;
 }
  body {
-  background-color: #0B384F;
+  background-color: #4f545cd9;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -141,7 +141,4 @@ p {
     from {color: orange;}
     to {color: blue;}
 }
-body {
-/*background-image: url("images/bloackchain.png");*/
-background-color: #cccccc;
-}
+
