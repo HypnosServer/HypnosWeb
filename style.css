@@ -1,6 +1,6 @@
    /* width */
 ::-webkit-scrollbar {
-  width: 1%;
+  width: 7px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -8,7 +8,7 @@
   border-radius: 5px;
 }
  body {
-  background-color: #4f545cd9;
+  background-color: #4f545c;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -25,7 +25,7 @@ font: 40px Trebuchet MS;
 .youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
   overflow: hidden;
-  background-color: #697dc1;
+  background-color: #2f3031;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ font: 40px Trebuchet MS;
 }
 .navbar a:hover {
   background: #ffffff9c;
-  color: #378aff;
+  color: #145cbf;
 }
 .navbar a.active {
   color: white;
@@ -128,7 +128,7 @@ p {
 
 .moto {
   text-align: center;
-  line-height: 3.8em;
+  line-height: 4em;
   -webkit-transform: rotate(2deg);
       animation-name: flash;
     animation-duration: 2s;
