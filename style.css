@@ -138,7 +138,7 @@ p {
     animation-play-state: running;
 }
 @keyframes flash {
-    from {color: orange;}
-    to {color: blue;}
+from {color: #c59648;}
+    to {color: #7289da;}
 }
 
