@@ -1,0 +1,68 @@
+<html>
+<head>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146642276-1');
+</script>
+<title>Hypnos</title>
+<link rel="icon" href="images/512h.png">
+<link rel="stylesheet" href="style.css">
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script>
+      MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          
+        }
+		console.log(status.players.now);
+		var motd = status.motd;
+		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
+		favicon = status.favicon;
+		console.log(motd);
+		document.getElementById("statusfavicon").src = favicon;
+		console.log(favicon);
+        // you can change these to your own message!
+       
+      });
+    </script>
+
+</head>
+
+<body>
+  <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
+<div class="navbar">
+	<div style="float:left;" class='round'>
+		  
+  <img src="images/64h.png" height="64" width="64">
+		</div>
+  <a href="/" target="_self">Hypnos</a>
+  <a href="/status" target="_self">about</a>
+  <a href="/mcrules" target="_self">rules</a>
+  <a href="/status" target="_self">status</a>
+  <a href="/mcrules" target="_self">community</a>
+  <a href="/mcrules" target="_self">origin</a>
+</div>
+<body bgcolor="#0B384F">
+<p>
+
+	  
+</p>	
+	<div class='moto'>
+	About Hypnos
+		</div>
+ <div class="boxedlinks"> 
+	 Bruh this is about page
+
+      </div>
+    
+     
+
+ 
+
+</html>
