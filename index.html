@@ -10,6 +10,36 @@
   gtag('js', new Date());
   gtag('config', 'UA-146642276-1');
 </script>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Nov 1, 2019 15:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 <title>Hypnos</title>
 <link rel="icon" href="images/512h.png">
 <link rel="stylesheet" href="style.css">
@@ -61,8 +91,7 @@
 		</div>
  <div class="boxedlinks"> 
 	 <p>Time Until Server Launch</p>
-<p>	 <iframe src="https://free.timeanddate.com/countdown/i6yj8zhi/n25/cf100/cm0/cu4/ct0/cs1/ca0/co1/cr0/ss0/cacfff/cpcf00/pct/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tacfff/tptTime%20since%20Event%20started%20in/tpcf00/iso2019-11-01T17:30:00" allowTransparency="true" frameborder="0" width="320" height="135"></iframe>
-</p>
+<p id="demo"></p>
 
     <h2 style="font-size:20px">*Server and Website under development*</h2>
  
