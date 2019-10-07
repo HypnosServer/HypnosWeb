@@ -1,0 +1,70 @@
+<html>
+<head>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146642276-1');
+</script>
+<title>Hypnos - Rules</title>
+<link rel="icon" href="/images/512h.png">
+<link rel="stylesheet" href="style.css">
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script>
+      MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          
+        }
+		console.log(status.players.now);
+		var motd = status.motd;
+		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
+		favicon = status.favicon;
+		console.log(motd);
+		document.getElementById("statusfavicon").src = favicon;
+		console.log(favicon);
+        // you can change these to your own message!
+       
+      });
+    </script>
+
+</head>
+
+<body>
+  <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
+<div class="navbar">
+	<div style="float:left;" class='round'>
+		  
+  <img src="/images/64h.png" height="64" width="64">
+		</div>
+  <a href="/" target="_self">Hypnos</a>
+  <a href="/about" target="_self">about</a>
+  <a href="/mcrules" target="_self">rules</a>
+  <a href="/status" target="_self">status</a>
+  <a href="/community" target="_self">community</a>
+  <a href="/origin" target="_self">origin</a>
+  <a href="/join" target="_self">join</a>
+</div>
+<body bgcolor="#0B384F">
+<p>
+<div class="logo">
+	<p>
+Join Hypnos</p>
+
+</p>	
+	
+ <div class="boxedlinks"> 
+	 <p style="font-size:20px">*Please Note: This Website Is Still Under Development*</p>
+	 <p style="font-size:17px">
+	Hypnos is a technical server, we expect our members to have at least some technical knowledge of the game and have a good understanding of the different mechanics. Please join the Discord in the <a href="/community" target="_self">community</a> tab and fill out the form below. The application will be reviewed and voted upon by the server's current members. If you are not notified within five days then your application has been denied.  
+    </div>
+    <p style="font-size:20px">*Forms will be open October 25th, one week before the Server Launch*</p>
+	
+
+ 
+</div>
+</html>
