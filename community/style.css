@@ -24,6 +24,7 @@ font: 40px Trebuchet MS;
 }  
 .youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
+  z-index: 1;
   overflow: hidden;
   background-color: #2f3031;
   position: fixed;
