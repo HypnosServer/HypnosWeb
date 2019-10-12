@@ -56,9 +56,10 @@ var x = setInterval(function() {
 		var motd = status.motd;
 		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
 		favicon = status.favicon;
+	        playersnow = status.players.now;
 		console.log(motd);
 		document.getElementById("statusfavicon").src = favicon;
-	        document.getElementById("currentplayers").src = status.players.now;
+	        document.getElementById("statusplayers").src = playersnow;
 		console.log(favicon);
       });
     </script>
