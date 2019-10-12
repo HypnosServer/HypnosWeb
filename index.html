@@ -29,14 +29,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  // Output the result in an element with id="timer"
+  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
@@ -45,8 +45,9 @@ var x = setInterval(function() {
 <link rel="stylesheet" href="style.css">
 <script src="https://mcapi.us/scripts/minecraft.js"></script>
     <script>
+      // This pings the server and fetches a certain types of data    
       MinecraftAPI.getServerStatus('hypnos.shit.vc', {
-        port: 25565 // optional, only if you need a custom port
+        port: 25565
       }, function (err, status) {
         if (err) {
           
@@ -57,9 +58,8 @@ var x = setInterval(function() {
 		favicon = status.favicon;
 		console.log(motd);
 		document.getElementById("statusfavicon").src = favicon;
+	        document.getElementById("currentplayers").src = status.players.now;
 		console.log(favicon);
-        // you can change these to your own message!
-       
       });
     </script>
 
@@ -92,12 +92,9 @@ var x = setInterval(function() {
 		</div>
  <div class="boxedlinks"> 
 	 <p>Time Until Server Launch</p>
-<p id="demo">
-This is a test
-<script>
-document.write(status.players.now);
-</script>
-	</p>
+<p id="timer"></p>
+Current Players	 
+<p id="currentplayers"></p>
     <h2 style="font-size:20px">*Server and Website under development*</h2>
  
 
@@ -106,7 +103,7 @@ document.write(status.players.now);
 <h1 style="font-size:40px">News</h1>
 <h1 style="font-size:17px">Server Set to Launch November 1st, 2019</h1>
 <h1 style="font-size:17px">Applications will be open October 25th, one week before server launch. You will find the form in the join tab</h1>
-<h1 style="font-size:17px">Join the discord in the Community tab</h1>	      
+<h1 style="font-size:17px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>	      
 </div>
      
 
