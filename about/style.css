@@ -30,6 +30,7 @@ font: 40px Trebuchet MS;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 .navbar img {
   float: left;
@@ -64,6 +65,7 @@ font: 40px Trebuchet MS;
   font-size: 18px;
   vertical-align: center;
 }
+a {font-size: 17px}
 .navbar a:hover {
   background: #ffffff9c;
   color: #145cbf;
