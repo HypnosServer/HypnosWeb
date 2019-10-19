@@ -73,7 +73,7 @@ font: 40px Trebuchet MS;
 }
  .boxedlinks{
   background-color: #27292b;
-  width: 650px;
+  width: 500px;
    margin: auto;
     border-radius: 10px;
      padding: 10px;
@@ -94,10 +94,12 @@ font: 40px Trebuchet MS;
     
   border-radius: 5px;
 }
+a {font-size: 17px}
 .logo {
   transform: translateY(80px);
   text-align: center;
 }
+a {font-size: 17px}
 .serverspecs {
   transform: translateY(40px);
   text-align: center;
