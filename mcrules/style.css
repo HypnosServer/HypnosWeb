@@ -10,6 +10,7 @@
  body {
   background-color: #4f545c;
 }
+a {font-size: 17px}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey; 
@@ -24,6 +25,7 @@ font: 40px Trebuchet MS;
 }  
 .youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
+  z-index: 1;
   overflow: hidden;
   background-color: #2f3031;
   position: fixed;
