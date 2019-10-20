@@ -10,6 +10,7 @@
  body {
   background-color: #4f545c;
 }
+a {font-size: 17px}
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey; 
