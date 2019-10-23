@@ -40,9 +40,10 @@ Server Status</p>
 	
  <div class="boxedlinks"> 
 	 <p style="font-size:20px">*Please Note: This Website Is Still Under Development*</p>
-	 <p> <script src="https://mcapi.us/scripts/minecraft.js"></script>
+
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
 <div class="server-status">
-<p style="text-align:center">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="play.aydaacraft.online">0</span></b> players on!</p?
+<p style="text-align:center">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc">0</span></b> players on!</p?
 </div>
 <script>
 MinecraftAPI.getServerStatus('hypnos.shit.vc', {
@@ -51,10 +52,12 @@ port: 25565 // optional, only if you need a custom port
 if (err) {
 return document.querySelector('.server-status').innerHTML = 'Error loading status';
 }
-document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed"><u>ONLINE</u></font>' : '<font color="red">OFFLINE</font>';
+document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed"><u>online</u></font>' : '<font color="red">offline</font>';
 });
-</script></p>
-	
+</script>
+ <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+
+
 
  
 </div>
