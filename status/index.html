@@ -12,25 +12,6 @@
 <title>Hypnos - Status</title>
 <link rel="icon" href="/images/512rounded.png">
 <link rel="stylesheet" href="style.css">
-<script src="https://mcapi.us/scripts/minecraft.js"></script>
-    <script>
-      MinecraftAPI.getServerStatus('hypnos.shit.vc', {
-        port: 25565 // optional, only if you need a custom port
-      }, function (err, status) {
-        if (err) {
-          
-        }
-		console.log(status.players.now);
-		var motd = status.motd;
-		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
-		favicon = status.favicon;
-		console.log(motd);
-		document.getElementById("statusfavicon").src = favicon;
-		console.log(favicon);
-        // you can change these to your own message!
-       
-      });
-    </script>
 
 </head>
 
@@ -59,9 +40,20 @@ Server Status</p>
 	
  <div class="boxedlinks"> 
 	 <p style="font-size:20px">*Please Note: This Website Is Still Under Development*</p>
-	 <p style="font-size:17px">
-	When the server launches and the js script is done this page will display the current amount of players online, the motd and server icon. 
-	  </div>
+	 <p> <script src="https://mcapi.us/scripts/minecraft.js"></script>
+<div class="server-status">
+<p style="text-align:center">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="play.aydaacraft.online">0</span></b> players on!</p?
+</div>
+<script>
+MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+port: 25565 // optional, only if you need a custom port
+}, function (err, status) {
+if (err) {
+return document.querySelector('.server-status').innerHTML = 'Error loading status';
+}
+document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed"><u>ONLINE</u></font>' : '<font color="red">OFFLINE</font>';
+});
+</script></p>
 	
 
  
