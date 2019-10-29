@@ -1,114 +1,117 @@
-﻿
+﻿<!DOCTYPE html>
 <html>
-<head>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-146642276-1');
+		</script>
 
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-146642276-1');
-</script>
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Nov 1, 2019 15:30:00").getTime();
+		<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Nov 1, 2019 15:30:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+				// Get today's date and time
+				var now = new Date().getTime();
 
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="timer"
-  document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-<title>Hypnos</title>
-<link rel="icon" href="images/512rounded.png">
-<link rel="stylesheet" href="style.css">
-<script src="https://mcapi.us/scripts/minecraft.js"></script>
-    <script>
-      // This pings the server and fetches a certain types of data    
-      MinecraftAPI.getServerStatus('hypnos.shit.vc', {
-        port: 25565
-      }, function (err, status) {
-        if (err) {
-          
-        }
-		console.log(status.players.now);
-		var motd = status.motd;
-		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
-		favicon = status.favicon;
-	        playersnow = status.players.now;
-		console.log(motd);
-		document.getElementById("statusfavicon").src = favicon;
-	        document.getElementById("statusplayers").src = playersnow;
-		console.log(favicon);
-      });
-    </script>
+				// Find the distance between now and the count down date
+				var distance = countDownDate - now;
 
-</head>
+				// Time calculations for days, hours, minutes and seconds
+				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-<body>
-  <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
-<div class="navbar">
-	<div style="float:left;" class='round'>
-		  
-  <img src="images/64h.png" height="64" width="64">
+				// Output the result in an element with id="timer"
+				document.getElementById("timer").innerHTML =
+					days + "d " +
+					hours + "h " +
+					minutes + "m " + 
+					seconds + "s ";
+
+				// If the count down is over, write some text 
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("timer").innerHTML = "EXPIRED";
+				}
+			}, 1000);
+		</script>
+
+		<title>Hypnos</title>
+
+		<link rel="icon" href="images/512rounded.png">
+		<link rel="stylesheet" href="style.css">
+
+		<script src="https://mcapi.us/scripts/minecraft.js"></script>
+		<script>
+			// This pings the server and fetches a certain types of data
+			MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+				port: 25565
+			}, function (err, status) {
+				if (err) {
+				
+				}
+				console.log(status.players.now);
+				var motd = status.motd;
+				motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
+				favicon = status.favicon;
+					playersnow = status.players.now;
+				console.log(motd);
+				document.getElementById("statusfavicon").src = favicon;
+					document.getElementById("statusplayers").src = playersnow;
+				console.log(favicon);
+			});
+		</script>
+	</head>
+
+	<body link="#ffffff" vlink="#ffffff" alink="#66ccff" background-color="#0B384F">
+		<div class="navbar">
+			<div style="float: left;" class='round'>
+				<img src="images/64h.png" height="64" width="64">
+			</div>
+
+			<a href="/" target="_self">Hypnos</a>
+			<a href="/about" target="_self">About</a>
+			<a href="/mcrules" target="_self">Rules</a>
+			<a href="/status" target="_self">Status</a>
+			<a href="/community" target="_self">Community</a>
+			<a href="/origin" target="_self">Origin</a>
+			<a href="/join" target="_self">Join</a>
 		</div>
-  <a href="/" target="_self">Hypnos</a>
-  <a href="/about" target="_self">about</a>
-  <a href="/mcrules" target="_self">rules</a>
-  <a href="/status" target="_self">status</a>
-  <a href="/community" target="_self">community</a>
-  <a href="/origin" target="_self">origin</a>
-  <a href="/join" target="_self">join</a>
-</div>
-<body bgcolor="#0B384F">
-<p>
-<div class='logo'>
-<img height="200px" width="550px" src="images/BannerV3.png" alt="Hypnos">  
-</div>
-	  
-</p>	
-	<div class='moto'>
-	The Sleepy Tech Server
+		<div class='logo'>
+			<p>
+				<img height="200px" width="550px" src="images/BannerV3.png" alt="Hypnos">
+			</p>
 		</div>
- <div class="boxedlinks"> 
-	 <p>Server Currently Launched</p>
-<h1 style="font-size:20px">If you would like to join, please visit the <a href="/join" target="_self">join</a> tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.</h1>
-<!--<p>Current Players</p>	 
-<p id="currentplayers"></p> Adarsh add the current player count here -->
-    <h2 style="font-size:20px">*Server and Website under development*</h2>
- 
 
-      </div>
-      <div class="boxeddiscord">
-<h1 style="font-size:40px">News</h1>
-<h1 style="font-size:17px"></h1>
-<h1 style="font-size:17px">Applications are currently closed, they can be found in the <a href="/join" target="_self">join</a> tab.</h1>
-<h1 style="font-size:17px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>	      
-</div>
-     
+		<div class='moto'>
+			The Sleepy Tech Server
+		</div>
 
- 
-
+		<div class="boxedlinks"> 
+			<p>Server Currently Launched</p>
+			<h1 style="font-size:20px">
+				If you would like to join, please visit the <a href="/join" target="_self">join</a>
+				tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
+			</h1>
+			<!--<p>Current Players</p>
+			<p id="currentplayers"></p> Adarsh add the current player count here -->
+			<h2 style="font-size:20px">*Server and Website under development*</h2>
+		</div>
+		<div class="boxeddiscord">
+			<h1 style="font-size:40px">News</h1>
+			<h1 style="font-size:17px"></h1>
+			<h1 style="font-size:17px">
+				Applications are currently closed, they can be found in the
+				<a href="/join" target="_self">join</a> tab.
+			</h1>
+			<h1 style="font-size:17px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
+		</div>
+	</body>
 </html>
-
