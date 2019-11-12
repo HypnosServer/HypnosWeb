@@ -20,7 +20,7 @@
 				var now = new Date().getTime();
 
 				// Find the distance between now and the count down date
-				var distance = countDownDate - now;
+				var distance = now - countDownDate;
 
 				// Time calculations for days, hours, minutes and seconds
 				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -47,27 +47,16 @@
 
 		<link rel="icon" href="images/512rounded.png">
 		<link rel="stylesheet" href="style.css">
-
-		<script src="https://mcapi.us/scripts/minecraft.js"></script>
-		<script>
-			// This pings the server and fetches a certain types of data
-			MinecraftAPI.getServerStatus('hypnos.shit.vc', {
-				port: 25565
-			}, function (err, status) {
-				if (err) {
-				
-				}
-				console.log(status.players.now);
-				var motd = status.motd;
-				motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
-				favicon = status.favicon;
-					playersnow = status.players.now;
-				console.log(motd);
-				document.getElementById("statusfavicon").src = favicon;
-					document.getElementById("statusplayers").src = playersnow;
-				console.log(favicon);
-			});
-		</script>
+        <script>
+MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+port: 25565 // optional, only if you need a custom port
+}, function (err, status) {
+if (err) {
+return document.querySelector('.server-status').innerHTML = 'Error loading status';
+}
+document.querySelector('.server-onlinec').innerHTML = status.online ? '<font color="greed" style="font-size:15px"><u>online</u></font>' : '<font color="red" style="font-size:15px">offline</font>';
+});
+</script>
 	</head>
 
 	<body link="#ffffff" vlink="#ffffff" alink="#66ccff" background-color="#0B384F">
@@ -95,7 +84,8 @@
 		</div>
 
 		<div class="boxedlinks"> 
-			<p>Server Currently Launched</p>
+			<p style="font-size:25px">Server Currently Launched</p>
+			 <h1 style="font-size:15px"><p style="font-size:15px">Server currently <b><span class="server-onlinec"></span></b></p?><h1 style="font-size:15px">Server is currently: <p id=timer></p> old.</h1></h1>
 			<h1 style="font-size:20px">
 				If you would like to join, please visit the <a href="/join" target="_self">join</a>
 				tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
@@ -105,10 +95,11 @@
 			<h2 style="font-size:20px">*Server and Website under development*</h2>
 		</div>
 		<div class="boxeddiscord">
-			<h1 style="font-size:40px">News</h1>
+			<h1 style="font-size:25px">News</h1>
 			<h1 style="font-size:17px"></h1>
+			<h1 style="font-size:17px">1 Month server tour Coming up on November 30th, please join the Discord if you have any questions.</h1>
 			<h1 style="font-size:17px">
-				Applications are currently <em>OPEN</em>, they can be found in the
+				Applications are currently OPEN, they can be found in the
 				<a href="/join" target="_self">join</a> tab.
 			</h1>
 			<h1 style="font-size:17px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
