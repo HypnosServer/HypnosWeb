@@ -27,6 +27,8 @@ function excelParse(excelDate) {
   var json;
   var counts = [];
   var axis = [];
+  //var axisr = Array(counts.length).fill().map((_, i) => i);
+  var countserror = [];
   var url = "https://prod-118.westus.logic.azure.com:443/workflows/9129d9114fa747449644d4d76c32ad6d/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=CS82M4kCA7mgEeCW08-m1cWraanZsZJRA_wcaFwVjAE";
   xhr.open("POST", url, true); 
   xhr.setRequestHeader("Content-Type", "application/json"); 
@@ -36,20 +38,32 @@ function excelParse(excelDate) {
           json.forEach(element => {
            var now = element.player_count;
            var stamp = element.timestamp;
-           counts.push(now == "" ? null : parseInt(now));
+           counts.push(now == ""  ? null : parseInt(now));
+           countserror.push(element.online == "false" ? 0 : null)
            axis.push(stamp == "" ? null : hourFormat(excelParse(stamp)));
           });
-          //axis = Array(counts.length).fill().map((_, i) => i);
           console.log(counts);
           console.log(axis);
+          console.log(json);
        var trace1 = {
+        type: 'scatter',
        y: counts,
        x: axis,
-       mode: 'scatter',
-       connectgaps: true
+       name: "Player Count"
        };
+       var trace2 = {
+        type: 'scatter',
+        y: countserror,
+        x: axis,
+        name: "Server Offline",
+        line: {
+            color: 'rgb(255, 0, 0)',
+            width: '10px'
+        },
+        hoverinfo: 'name'        
+    };
   
-       var data = [trace1];
+       var data = [trace1,trace2];
   
        var layout = {
        title: "Player Count over Time on " + simpleDate(new Date()),
@@ -58,10 +72,11 @@ function excelParse(excelDate) {
        },
        yaxis: {
         title: 'Player Count'
-       }
+       },
+       showlegend: false
   };
   
-  Plotly.newPlot('graphDiv', data, layout);
+  Plotly.newPlot('graphDiv', data, layout, {displayModeBar: false});
       } 
   }; 
   xhr.send();   
