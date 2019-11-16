@@ -3,6 +3,8 @@
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+<!-- Plotly.js -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -43,7 +45,7 @@ Server Status</p>
 <p style="font-size:25px">Hypnos Survival Multiplayer Status</p>
 <script src="https://mcapi.us/scripts/minecraft.js"></script>
 <div class="server-status">
-<p style="font-size:15px">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc">0</span></b> players on!</p?
+<p style="font-size:15px">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc" style="font-size: 15px;">0</span></b> players on!</p>
 </div>
 <script>
 MinecraftAPI.getServerStatus('hypnos.shit.vc', {
@@ -52,15 +54,17 @@ port: 25565 // optional, only if you need a custom port
 if (err) {
 return document.querySelector('.server-status').innerHTML = 'Error loading status';
 }
-document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:15px"><u>online</u></font>' : '<font color="red" style="font-size:15px">offline</font>';
+document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
 });
 </script>
  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
 <p style="font-size:25px">Hypnos Creative Multiplayer Status</p>
 	<script src="https://mcapi.us/scripts/minecraft.js"></script>
 <div class="server-statusc">
-<p style="font-size:15px">Server currently <b><span class="server-onlinec"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc:25566">0</span></b> players on!</p?
+<p style="font-size:15px">Server currently <b><span class="server-onlinec"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc:25566" style="font-size: 15px;">0</span></b> players on!</p>
 </div>
+<div id="graphDiv"></div>
+<script src="graph.js"></script>
 <script>
 MinecraftAPI.getServerStatus('hypnos.shit.vc', {
 port: 25566 // optional, only if you need a custom port
@@ -68,7 +72,7 @@ port: 25566 // optional, only if you need a custom port
 if (err) {
 return document.querySelector('.server-statusc').innerHTML = 'Error loading status';
 }
-document.querySelector('.server-onlinec').innerHTML = status.online ? '<font color="greed" style="font-size:15px"><u>online</u></font>' : '<font color="red" style="font-size:15px">offline</font>';
+document.querySelector('.server-onlinec').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
 });
 </script>
  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
