@@ -17,7 +17,17 @@ function excelParse(excelDate) {
       weekday: 'long',
       year: 'numeric',
       month: 'long',
+      day: 'numeric'
+    });
+  }
+function graphDate(date){
+    return date.toLocaleString('en-US', { 
+      year: 'numeric',
+      month: 'numeric',
       day: 'numeric',
+      hour: 'numeric',
+      minute: 'numeric',
+      hour12: true
     });
   }
   
@@ -40,7 +50,7 @@ function excelParse(excelDate) {
            var stamp = element.timestamp;
            counts.push(now == ""  ? null : parseInt(now));
            countserror.push(element.online == "false" ? 0 : null)
-           axis.push(stamp == "" ? null : hourFormat(excelParse(stamp)));
+           axis.push(stamp == "" ? null : excelParse(stamp));
           });
           console.log(counts);
           console.log(axis);
@@ -68,7 +78,8 @@ function excelParse(excelDate) {
        var layout = {
        title: "Player Count over Time on " + simpleDate(new Date()),
        xaxis: {
-        title: 'Time'
+        title: 'Time',
+        tickformat: '%I:%M %p'
        },
        yaxis: {
         title: 'Player Count'
