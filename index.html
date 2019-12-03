@@ -75,15 +75,19 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 		</div>
 		<div class='logo'>
 			<p>
-				<img height="200px" width="550px" src="images/BannerV3.png" alt="Hypnos">
+				<img height="160px" width="450px" src="images/BannerV3.png" alt="Hypnos">
 			</p>
 		</div>
-
+<br>
 		<div class='moto'>
 			Hypnos bestnos ofc
 		</div>
 
 	<div class="boxedlinks"> 
+    <h1 style="font-size:16px">
+				If you would like to apply, please visit the <a href="/join" target="_self">join</a>
+				tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
+			</h1>
 		<script src="https://mcapi.us/scripts/minecraft.js"></script>
 			<div class="server-status">
 			<p style="font-size:15px">server status: <b><span class="server-online"></span></b></p>
@@ -95,15 +99,12 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 					if (err) {
 					return document.querySelector('.server-status').innerHTML = 'Error loading status';
 				}
-				document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
+				document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:16px">online</font>' : '<font color="red" style="font-size:16px">offline</font>';
 			});
 		</script>
-			<h1 style="font-size:20px">
-				If you would like to join, please visit the <a href="/join" target="_self">join</a>
-				tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
-			</h1>
+			
 		</div>
-		<div class="boxeddiscord">
+		<!-- <div class="boxeddiscord">
 			<h1 style="font-size:20px">News</h1>
 			<h1 style="font-size:16px"></h1>
 			<h1 style="font-size:16px">Some completed projects can be found in the <a href="/media" target="_self">media</a> tab.</h1>
@@ -112,6 +113,6 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 				<a href="/join" target="_self">join</a> tab.
 			</h1>
 			<h1 style="font-size:16px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
-		</div>
+		</div>-->
 	</body>
 </html>
