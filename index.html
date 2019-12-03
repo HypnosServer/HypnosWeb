@@ -80,28 +80,38 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 		</div>
 
 		<div class='moto'>
-			The Sleepy Tech Server
+			Hypnos bestnos ofc
 		</div>
 
-		<div class="boxedlinks"> 
-			 <!-- <h1 style="font-size:15px"><p style="font-size:15px">Server currently <b><span class="server-onlinec"></span></b></p?><h1 style="font-size:15px">Server is: <p style="font-size:15px" id=timer></p> old.</h1></h1> -->
+	<div class="boxedlinks"> 
+		<script src="https://mcapi.us/scripts/minecraft.js"></script>
+			<div class="server-status">
+			<p style="font-size:15px">server status: <b><span class="server-online"></span></b></p>
+			</div>
+			<script>
+				MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+				port: 25565 // optional, only if you need a custom port
+				}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status').innerHTML = 'Error loading status';
+				}
+				document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
+			});
+		</script>
 			<h1 style="font-size:20px">
 				If you would like to join, please visit the <a href="/join" target="_self">join</a>
 				tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
 			</h1>
-			<!--<p>Current Players</p>
-			<p id="currentplayers"></p> Adarsh add the current player count here -->
-			<h2 style="font-size:20px">*Server and Website under development*</h2>
 		</div>
 		<div class="boxeddiscord">
-			<h1 style="font-size:25px">News</h1>
-			<h1 style="font-size:17px"></h1>
-			<h1 style="font-size:17px">Some completed projects can be found in the <a href="/media" target="_self">media</a> tab.</h1>
-			<h1 style="font-size:17px">
+			<h1 style="font-size:20px">News</h1>
+			<h1 style="font-size:16px"></h1>
+			<h1 style="font-size:16px">Some completed projects can be found in the <a href="/media" target="_self">media</a> tab.</h1>
+			<h1 style="font-size:16px">
 				Applications are currently OPEN, they can be found in the
 				<a href="/join" target="_self">join</a> tab.
 			</h1>
-			<h1 style="font-size:17px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
+			<h1 style="font-size:16px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
 		</div>
 	</body>
 </html>

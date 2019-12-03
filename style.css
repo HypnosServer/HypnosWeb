@@ -60,7 +60,7 @@ body {
 	text-align: center;
 	padding: 22px 14px;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 16px;
 	vertical-align: center;
 }
 .navbar a:hover {
@@ -133,6 +133,7 @@ p {
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 	animation-play-state: running;
+	font-size: 18px;
 }
 
 @keyframes flash {

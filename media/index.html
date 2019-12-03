@@ -1,0 +1,75 @@
+<html>
+<head>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-146642276-1');
+</script>
+<title>Hypnos - Media</title>
+<link rel="icon" href="/images/512rounded.png">
+<link rel="stylesheet" href="style.css">
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <script>
+      MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          
+        }
+		console.log(status.players.now);
+		var motd = status.motd;
+		motd = motd.replace(/§a|§9§l|§c|§3|§e|§6|§5/g, '');
+		favicon = status.favicon;
+		console.log(motd);
+		document.getElementById("statusfavicon").src = favicon;
+		console.log(favicon);
+        // you can change these to your own message!
+       
+      });
+    </script>
+
+</head>
+
+<body>
+  <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
+<div class="navbar">
+	<div style="float:left;" class='round'>
+		  
+  <img src="/images/64h.png" height="64" width="64">
+		</div>
+  <a href="/" target="_self">Hypnos</a>
+  <a href="/about" target="_self">about</a>
+  <a href="/mcrules" target="_self">rules</a>
+  <a href="/status" target="_self">status</a>
+  <a href="/community" target="_self">community</a>
+  <a href="/origin" target="_self">origin</a>
+    <a href="/join" target="_self">join</a>
+</div>
+<body bgcolor="#0B384F">
+<p>
+<div class="logo">
+	<p>
+Hypnos Origin</p>
+
+</p>	
+	
+ <div class="boxedlinks"> 
+	 <p style="font-size:16px">
+    Hypnos Member's Twitch/Youtube will be posted here along with images and videos from projects. 
+  <br>
+    1 Month servertour sneak peak
+    </div>
+    <p>
+      <video width="140" height="320" controls="controls" autoplay>
+      <source src="https://i.gyazo.com/c65cd4e2b083822e3008810b68ba910f.mp4" type="video/mp4">
+      </video>
+    </p>
+	
+
+ 
+</div>
+</html>
