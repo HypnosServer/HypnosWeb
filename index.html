@@ -1,77 +1,34 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'UA-146642276-1');
-		</script>
-
-		<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Nov 2, 2019 13:45:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-				// Get today's date and time
-				var now = new Date().getTime();
-
-				// Find the distance between now and the count down date
-				var distance = now - countDownDate;
-
-				// Time calculations for days, hours, minutes and seconds
-				var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-				// Output the result in an element with id="timer"
-				document.getElementById("timer").innerHTML =
-					days + "d " +
-					hours + "h " +
-					minutes + "m " + 
-					seconds + "s ";
-
-				// If the count down is over, write some text 
-				if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("timer").innerHTML = "EXPIRED";
-				}
-			}, 1000);
-		</script>
-
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W6PVGLS');</script>
+<!-- End Google Tag Manager -->
 		<title>Hypnos</title>
-
 		<link rel="icon" href="images/512rounded.png">
-		<link rel="stylesheet" href="style.css">
-        <script>
-MinecraftAPI.getServerStatus('hypnos.shit.vc', {
-port: 25565 // optional, only if you need a custom port
-}, function (err, status) {
-if (err) {
-return document.querySelector('.server-status').innerHTML = 'Error loading status';
-}
-document.querySelector('.server-onlinec').innerHTML = status.online ? '<font color="greed" style="font-size:15px"><u>online</u></font>' : '<font color="red" style="font-size:15px">offline</font>';
-});
-</script>
+		<link rel="stylesheet" href="style.css"> 
 	</head>
-
 	<body link="#ffffff" vlink="#ffffff" alink="#66ccff" background-color="#0B384F">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6PVGLS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 		<div class="navbar">
 			<div style="float: left;" class='round'>
 				<img src="images/64h.png" height="64" width="64">
 			</div>
-
 			<a href="/" target="_self">Hypnos</a>
-			<a href="/about" target="_self">about</a>
-			<a href="/mcrules" target="_self">rules</a>
-			<a href="/status" target="_self">status</a>
-			<a href="/community" target="_self">community</a>
-			<a href="/media" target="_self">media</a>
-			<a href="/join" target="_self">join</a>
+			<a href="/about" target="_self">About</a>
+			<a href="/mcrules" target="_self">Rules</a>
+			<a href="/status" target="_self">Status</a>
+			<a href="/community" target="_self">Community</a>
+			<a href="/media" target="_self">Media</a>
+			<a href="/join" target="_self">Join</a>
 		</div>
 		<div class='logo'>
 			<p>
@@ -80,7 +37,7 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 		</div>
 <br>
 		<div class='moto'>
-			Hypnos bestnos ofc
+			Hypnos bestnos
 		</div>
 
 	<div class="boxedlinks"> 
@@ -93,7 +50,7 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 			<p style="font-size:15px">server status: <b><span class="server-online"></span></b></p>
 			</div>
 			<script>
-				MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+				MinecraftAPI.getServerStatus('hypnos.ml', {
 				port: 25565 // optional, only if you need a custom port
 				}, function (err, status) {
 					if (err) {
@@ -102,17 +59,175 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 				document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:16px">online</font>' : '<font color="red" style="font-size:16px">offline</font>';
 			});
 		</script>
-			
-		</div>
-		<!-- <div class="boxeddiscord">
-			<h1 style="font-size:20px">News</h1>
-			<h1 style="font-size:16px"></h1>
-			<h1 style="font-size:16px">Some completed projects can be found in the <a href="/media" target="_self">media</a> tab.</h1>
-			<h1 style="font-size:16px">
-				Applications are currently OPEN, they can be found in the
-				<a href="/join" target="_self">join</a> tab.
-			</h1>
-			<h1 style="font-size:16px">Join the discord in the <a href="/community" target="_self">community</a> tab</h1>
-		</div>-->
+    <h1 style="font-size:16px">Quick Links <br>
+     <a href="https://forms.gle/SKvw6P51EL3z72iH7" target="_self">Application</a> <br>
+    <a href="https://discordapp.com/widget?id=626974236753264664&theme=dark" target="_self">Discord</a>
+    </h1>
+    
+    </div>
+<!--    <br>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+-->
 	</body>
 </html>
