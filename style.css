@@ -20,7 +20,7 @@ body {
 	background: lightsteelblue; 
 }
 * {
-	font: 40px Trebuchet MS;
+	font-family: 'Raleway';
 }
 .navbar {
 	z-index: 1;
