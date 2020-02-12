@@ -1,8 +1,13 @@
+
 <html>
 <head>
-
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146642276-1"></script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W6PVGLS');</script>
+<!-- End Google Tag Manager -->
 <!-- Plotly.js 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
@@ -13,8 +18,8 @@
 </script> -->
 <title>Hypnos - Status</title>
 <link rel="icon" href="/images/512rounded.png">
-<link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="https://hypnos.us.to/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -25,12 +30,11 @@
   <img src="/images/64h.png" height="64" width="64">
 		</div>
   <a href="/" target="_self">Hypnos</a>
-  <a href="/about" target="_self">about</a>
-  <a href="/mcrules" target="_self">rules</a>
-  <a href="/status" target="_self">status</a>
-  <a href="/community" target="_self">community</a>
-  <a href="/media" target="_self">media</a>
-  <a href="/join" target="_self">join</a>
+  <a href="/about" target="_self">About</a>
+  <a href="/status" target="_self">Status</a>
+  <a href="/community" target="_self">Community</a>
+  <a href="/media" target="_self">Media</a>
+  <a href="/join" target="_self">Join</a>
 </div>
 <body bgcolor="#0B384F">
 <p>
@@ -41,11 +45,10 @@ Server Status</p>
 </p>	
 	
  <div class="boxedlinks"> 
-	 <p style="font-size:20px">*Please Note: This Website Is Still Under Development*</p>
-<p style="font-size:25px">Hypnos Survival Multiplayer Status</p>
+<p style="font-size:18px">Hypnos Survival Multiplayer Status</p>
 <script src="https://mcapi.us/scripts/minecraft.js"></script>
 <div class="server-status">
-<p style="font-size:15px">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc" style="font-size: 15px;">0</span></b> players on!</p>
+<p style="font-size:14px">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc" style="font-size: 15px;">0</span></b> players on!</p>
 </div>
 <script>
 MinecraftAPI.getServerStatus('hypnos.shit.vc', {
@@ -58,15 +61,15 @@ document.querySelector('.server-online').innerHTML = status.online ? '<font colo
 });
 </script>
  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
-<p style="font-size:25px">Hypnos Creative Multiplayer Status</p>
+<p style="font-size:18px">Hypnos Creative Multiplayer Status</p>
 	<script src="https://mcapi.us/scripts/minecraft.js"></script>
 <div class="server-statusc">
-<p style="font-size:15px">Server currently <b><span class="server-onlinec"></span></b>, with <b><span data-playercounter-ip="hypnos.shit.vc:25566" style="font-size: 15px;">0</span></b> players on!</p>
+<p style="font-size:14px">Server currently <b><span class="server-onlinec"></span></b>, with <b><span data-playercounter-ip="hypnos.ml:25566" style="font-size: 15px;">0</span></b> players on!</p>
 </div>
 <div id="graphDiv"></div>
 <script src="graph.js"></script>
 <script>
-MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+MinecraftAPI.getServerStatus('hypnos.ml', {
 port: 25566 // optional, only if you need a custom port
 }, function (err, status) {
 if (err) {
@@ -76,8 +79,5 @@ document.querySelector('.server-onlinec').innerHTML = status.online ? '<font col
 });
 </script>
  <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
-
-
- 
 </div>
 </html>
