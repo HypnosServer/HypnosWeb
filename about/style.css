@@ -20,8 +20,8 @@
   background: lightsteelblue; 
 }
 * {
-font: 40px Trebuchet MS;
-}  
+	font-family: 'Raleway';
+}
 .youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
   overflow: hidden;
