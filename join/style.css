@@ -1,29 +1,41 @@
- /* width */
+/* width */
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 5px;
 }
-a {font-size: 17px}
- body {
+
+a {
+  font-size: 17px
+}
+
+body {
   background-color: #4f545c;
 }
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: grey; 
+  background: grey;
   border-radius: 5px;
 }
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: lightsteelblue; 
+  background: lightsteelblue;
 }
+
 * {
-	font-family: 'Raleway';
+  font-family: 'Raleway';
 }
-.youcantsee p{color:rgba(255, 0, 0, 0.001);}
+
+.youcantsee p {
+  color: rgba(255, 0, 0, 0.001);
+}
+
 .navbar {
   overflow: hidden;
   background-color: #2f3031;
@@ -31,8 +43,9 @@ a {font-size: 17px}
   top: 0;
   left: 0;
   width: 100%;
-   z-index: 1;
+  z-index: 1;
 }
+
 .navbar img {
   float: left;
   display: block;
@@ -42,20 +55,22 @@ a {font-size: 17px}
   font-size: 17px;
   vertical-align: center;
 }
+
 .round {
-    width: 64px
-    height: 64px;
+  width: 64px height: 64px;
 
-    overflow: hidden;
-    border-radius: 15px;
+  overflow: hidden;
+  border-radius: 15px;
 }
+
 .biground {
-    width: 128px;
-    height: 128px;
+  width: 128px;
+  height: 128px;
 
-    overflow: hidden;
-    border-radius: 30px;
+  overflow: hidden;
+  border-radius: 30px;
 }
+
 .navbar a {
   float: left;
   display: block;
@@ -66,71 +81,83 @@ a {font-size: 17px}
   font-size: 16px;
   vertical-align: center;
 }
+
 .navbar a:hover {
   background: #ffffff9c;
   color: #145cbf;
 }
+
 .navbar a.active {
   color: white;
 }
- .boxedlinks{
+
+.boxedlinks {
   background-color: #27292b;
   width: 620px;
-   margin: auto;
-    border-radius: 10px;
-     padding: 10px;
-    
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+
   padding-bottom: 1px;
 }
-  .boxedcopyright{
+
+.boxedcopyright {
   background-color: #27292b;
   width: 110px;
-   margin: auto;
-     border-radius: 4px;
-    
+  margin: auto;
+  border-radius: 4px;
+
 }
-  .boxedlogo{
+
+.boxedlogo {
   background-color: #27292b;
   width: 128px;
-   margin: auto;
-    
+  margin: auto;
+
   border-radius: 5px;
 }
+
 .logo {
   transform: translateY(80px);
   text-align: center;
 }
+
 .serverspecs {
   transform: translateY(40px);
   text-align: center;
-    background-color: #27292b;
+  background-color: #27292b;
   width: 300px;
-   margin: auto;
-    border-radius: 10px;
-     padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
 }
-.boxeddiscord{
+
+.boxeddiscord {
   background-color: #27292b;
   width: 420px;
-   margin: auto;
-   padding: 5px;
+  margin: auto;
+  padding: 5px;
   border-radius: 10px;
-transform: translate(0%,5%);
+  transform: translate(0%, 5%);
 }
+
 .main {
   padding: 16px;
   margin-bottom: 30px;
 }
+
 h1 {
-    text-align: center;
+  text-align: center;
   color: white;
 }
+
 h2 {
-    text-align: center;
+  text-align: center;
   color: white;
-}    
+}
+
 p {
-    text-align: center;
+  text-align: center;
   color: white;
 }
 
@@ -140,14 +167,20 @@ p {
   text-align: center;
   line-height: 4em;
   -webkit-transform: rotate(2deg);
-      animation-name: flash;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-play-state: running;
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
 }
+
 @keyframes flash {
-    from {color: orange;}
-    to {color: blue;}
+  from {
+    color: orange;
+  }
+
+  to {
+    color: blue;
+  }
 }
