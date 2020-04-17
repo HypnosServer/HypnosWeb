@@ -43,7 +43,7 @@ a {font-size: 17px}
   vertical-align: center;
 }
 .round {
-    width: 64px
+    width: 64px;
     height: 64px;
 
     overflow: hidden;
@@ -73,26 +73,24 @@ a {font-size: 17px}
 .navbar a.active {
   color: white;
 }
- .boxedlinks{
+.boxedlinks{
   background-color: #27292b;
   width: 650px;
-   margin: auto;
-    border-radius: 10px;
-     padding: 10px;
-    
-  padding-bottom: 1px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
 }
-  .boxedcopyright{
+.boxedcopyright{
   background-color: #27292b;
   width: 110px;
-   margin: auto;
-     border-radius: 4px;
+    margin: auto;
+      border-radius: 4px;
     
 }
   .boxedlogo{
   background-color: #27292b;
   width: 128px;
-   margin: auto;
+    margin: auto;
     
   border-radius: 5px;
 }
@@ -105,15 +103,15 @@ a {font-size: 17px}
   text-align: center;
     background-color: #27292b;
   width: 300px;
-   margin: auto;
+    margin: auto;
     border-radius: 10px;
-     padding: 10px;
+      padding: 10px;
 }
 .boxeddiscord{
   background-color: #27292b;
   width: 420px;
-   margin: auto;
-   padding: 5px;
+  margin: auto;
+  padding: 5px;
   border-radius: 10px;
 transform: translate(0%,5%);
 }
