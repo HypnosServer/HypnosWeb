@@ -111,6 +111,10 @@ body {
 	text-align: center;
 }
 
+.logo p img {
+	border-radius: 10px;
+}
+
 .description {
 	text-align: center;
 	background-color: #27292b;
