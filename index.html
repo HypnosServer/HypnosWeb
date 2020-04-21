@@ -21,9 +21,8 @@
   </script>
   <!-- End Google Tag Manager -->
   <title>Hypnos</title>
-  <link rel="icon" href="images/512rounded.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+  <link rel="icon" href="./pages/images/512rounded.png">
+  <link rel="stylesheet" href="./pages/css/style.css">
 </head>
 
 <body link="#ffffff" vlink="#ffffff" alink="#66ccff" background-color="#0B384F">
@@ -33,18 +32,18 @@
   <!-- End Google Tag Manager (noscript) -->
   <div class="navbar">
     <div style="float: left;" class='round'>
-      <img src="images/64h.png" height="64" width="64">
+      <img src="./pages/images/64h.png" height="64" width="64">
     </div>
-    <a href="/" target="_self">Hypnos</a>
-    <a href="/about" target="_self">About</a>
-    <a href="/status" target="_self">Status</a>
-    <a href="/community" target="_self">Community</a>
-    <a href="/media" target="_self">Media</a>
-    <a href="/join" target="_self">Join</a>
+    <a href="./" target="_self">Hypnos</a>
+    <a href="./pages/about.html" target="_self">About</a>
+    <a href="./pages/status.html" target="_self">Status</a>
+    <a href="./pages/community.html" target="_self">Community</a>
+    <a href="./pages/media.html" target="_self">Media</a>
+    <a href="./pages/join.html" target="_self">Join</a>
   </div>
   <div class='logo'>
     <p>
-      <img height="175px" width="440px" src="images/BannerV3.png" alt="Hypnos">
+      <img height="175px" width="440px" src="./pages/images/BannerV3.png" alt="Hypnos">
     </p>
   </div>
   <br>
@@ -52,33 +51,28 @@
   <div class='moto'>
     Hypnos bestnos
   </div>
-  <!--
-  <div class='description'>
-    <h1>What is Hypnos?</h1>
-  </div>
-  -->
 
   <div class="boxedlinks">
-    <h1 style="font-size:16px">
-      If you would like to apply, please visit the <a href="/join" target="_self">join</a>
-      tab as well as joining the discord in the <a href="/community" target="_self">community</a> tab.
-    </h1>
-    <!--
-		<script src="https://mcapi.us/scripts/minecraft.js"></script>
-			<div class="server-status">
-			<p style="font-size:15px">server status: <b><span class="server-online"></span></b></p>
-			</div>
-			<script>
-				MinecraftAPI.getServerStatus('hypnos.ml', {
-				port: 25565 // optional, only if you need a custom port
-				}, function (err, status) {
-					if (err) {
-					return document.querySelector('.server-status').innerHTML = 'Error loading status';
-				}
-				document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:16px">online</font>' : '<font color="red" style="font-size:16px">offline</font>';
-			});
+    <p style="font-size:16px">
+      If you would like to apply, please visit the <a href="./pages/join.html" target="_self">join</a>
+      tab as well as joining the discord in the <a href="./pages/community.html" target="_self">community</a> tab.
+    </p>
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+    <div class="server-status">
+      <p style="font-size:15px">Server status: <b><span class="server-online"></span></b></p>
+    </div>
+    <script>
+      MinecraftAPI.getServerStatus('hypnos.ml', {
+        port: 25565 // optional, only if you need a custom port
+      }, function (err, status) {
+        if (err) {
+          return document.querySelector('.server-status').innerHTML = 'Error loading status';
+        }
+        document.querySelector('.server-online').innerHTML = status.online ?
+          '<font color="greed" style="font-size:16px">online</font>' :
+          '<font color="red" style="font-size:16px">offline</font>';
+      });
     </script>
-    -->
     <h1 style="font-size:16px">Quick Links<br>
       <a href="https://forms.gle/SKvw6P51EL3z72iH7" target="_self">Hypnos Application</a> <br>
       <a href="https://discordapp.com/widget?id=626974236753264664&theme=dark" target="_self">Hypnos Discord Server</a>
