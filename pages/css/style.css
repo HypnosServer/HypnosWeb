@@ -27,6 +27,16 @@ p {
   color: rgba(255, 0, 0, 0.001);
 }
 
+.navbar {
+  z-index: 1;
+  overflow: hidden;
+  background-color: #2f3031;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .navbar a {
   float: left;
   display: block;
@@ -44,16 +54,6 @@ p {
 
 .navbar a.active {
   color: white;
-}
-
-.navbar {
-  z-index: 1;
-  overflow: hidden;
-  background-color: #2f3031;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .navbar img {
@@ -80,7 +80,6 @@ p {
   overflow: hidden;
   border-radius: 30px;
 }
-
 
 .boxedlinks {
   background-color: #27292b;
