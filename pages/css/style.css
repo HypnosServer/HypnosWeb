@@ -32,7 +32,6 @@ body {
   color: rgba(255, 0, 0, 0.001);
 }
 
-.youcantsee p{color:rgba(255, 0, 0, 0.001);}
 .navbar {
   z-index: 1;
   overflow: hidden;
@@ -53,7 +52,7 @@ body {
 }
 
 .round {
-  width: 64px; 
+  width: 64px;
   height: 64px;
 
   overflow: hidden;
@@ -162,6 +161,7 @@ p {
 .moto {
   text-align: center;
   line-height: 4em;
+  transform: rotate(2deg);
   -webkit-transform: rotate(2deg);
   animation-name: flash;
   animation-duration: 2s;
@@ -188,6 +188,7 @@ p {
 .main-svg {
   border-radius: 10px;
 }
+
 /* latin-ext */
 @font-face {
   font-family: 'Raleway';
@@ -197,6 +198,7 @@ p {
   src: local('Raleway Light'), local('Raleway-Light'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptrg8zYS_SKggPNwIYqWqhPAMif.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
 @font-face {
   font-family: 'Raleway';
