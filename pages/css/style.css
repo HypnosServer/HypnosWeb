@@ -1,35 +1,49 @@
-/* width */
-::-webkit-scrollbar {
-  width: 7px;
-}
+@import "compass/css3";
 
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 5px;
+* {
+  font-family: Raleway;
 }
 
 body {
   background-color: #4f545c;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: grey;
-  border-radius: 5px;
+h1 {
+  text-align: center;
+  color: white;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: lightsteelblue;
+h2 {
+  text-align: center;
+  color: white;
 }
 
-* {
-  font-family: Raleway;
+p {
+  text-align: center;
+  color: white;
 }
 
 .youcantsee p {
   color: rgba(255, 0, 0, 0.001);
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 14px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background: #ffffff9c;
+  color: #145cbf;
+}
+
+.navbar a.active {
+  color: white;
 }
 
 .navbar {
@@ -67,24 +81,6 @@ body {
   border-radius: 30px;
 }
 
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 22px 14px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.navbar a:hover {
-  background: #ffffff9c;
-  color: #145cbf;
-}
-
-.navbar a.active {
-  color: white;
-}
 
 .boxedlinks {
   background-color: #27292b;
@@ -141,23 +137,6 @@ body {
   margin-bottom: 30px;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-}
-
-h2 {
-  text-align: center;
-  color: white;
-}
-
-p {
-  text-align: center;
-  color: white;
-}
-
-@import "compass/css3";
-
 .moto {
   text-align: center;
   line-height: 4em;
@@ -171,6 +150,36 @@ p {
   animation-play-state: running;
 }
 
+.main-svg {
+  border-radius: 10px;
+}
+
+#graphDiv {
+  padding-bottom: 10px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightsteelblue;
+}
+
 @keyframes flash {
   from {
     color: orange;
@@ -179,14 +188,6 @@ p {
   to {
     color: blue;
   }
-}
-
-#graphDiv {
-  padding-bottom: 10px;
-}
-
-.main-svg {
-  border-radius: 10px;
 }
 
 /* latin-ext */
