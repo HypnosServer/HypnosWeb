@@ -1,6 +1,7 @@
 <html>
 
 <head>
+<<<<<<< HEAD:status/index.html
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -20,6 +21,27 @@
   </script>
   <!-- End Google Tag Manager -->
   <!-- Plotly.js 
+=======
+<!-- Google Tag Manager -->
+<<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-W6PVGLS');
+</script>
+<!-- End Google Tag Manager -->
+<!-- Plotly.js 
+>>>>>>> trekkersfunbranch:pages/status.html
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -27,15 +49,22 @@
   gtag('js', new Date());
   gtag('config', 'UA-146642276-1');
 </script> -->
+<<<<<<< HEAD:status/index.html
   <title>Hypnos - Status</title>
   <link rel="icon" href="/images/512rounded.png">
   <link rel="stylesheet" href="https://hypnos.us.to/style.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300&display=swap" rel="stylesheet">
+=======
+<title>Hypnos - Status</title>
+<link rel="icon" href="./images/512rounded.png">
+<link rel="stylesheet" href="./css/style.css">
+>>>>>>> trekkersfunbranch:pages/status.html
 </head>
 
 <body>
 
   <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
+<<<<<<< HEAD:status/index.html
     <div class="navbar">
       <div style="float:left;" class='round'>
 
@@ -101,3 +130,62 @@
       </div>
 
 </html>
+=======
+<div class="navbar">
+	<div style="float:left;" class='round'>
+		  
+  <img src="./images/64h.png" height="64" width="64">
+		</div>
+  <a href="/" target="_self">Hypnos</a>
+  <a href="./about.html" target="_self">About</a>
+  <a href="./status.html" target="_self">Status</a>
+  <a href="./community.html" target="_self">Community</a>
+  <a href="./media.html" target="_self">Media</a>
+  <a href="./join.html" target="_self">Join</a>
+</div>
+<body bgcolor="#0B384F">
+<p>
+<div class="logo">
+	<p>
+Server Status</p>
+
+</p>	
+	
+ <div class="boxedlinks"> 
+<p style="font-size:18px">Hypnos Survival Multiplayer Status</p>
+<script src="https://mcapi.us/scripts/minecraft.js"></script>
+<div class="server-status">
+<p style="font-size:14px">Server currently <b><span class="server-online"></span></b>, with <b><span data-playercounter-ip="hypnos.ml" style="font-size: 15px;">0</span></b> players on!</p>
+</div>
+<script>
+MinecraftAPI.getServerStatus('hypnos.ml', {
+port: 25565 // optional, only if you need a custom port
+}, function (err, status) {
+if (err) {
+return document.querySelector('.server-status').innerHTML = 'Error loading status';
+}
+document.querySelector('.server-online').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
+});
+</script>
+ <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+<p style="font-size:18px">Hypnos Creative Multiplayer Status</p>
+	<script src="https://mcapi.us/scripts/minecraft.js"></script>
+<div class="server-statusc">
+<p style="font-size:14px">Server currently <b><span class="server-onlinec"></span></b>, with <b><span data-playercounter-ip="hypnos.ml:25566" style="font-size: 15px;">0</span></b> players on!</p>
+</div>
+<div id="graphDiv"></div>
+<script src="./js/graph.js"></script>
+<script>
+MinecraftAPI.getServerStatus('hypnos.ml', {
+port: 25566 // optional, only if you need a custom port
+}, function (err, status) {
+if (err) {
+return document.querySelector('.server-statusc').innerHTML = 'Error loading status';
+}
+document.querySelector('.server-onlinec').innerHTML = status.online ? '<font color="greed" style="font-size:15px">online</font>' : '<font color="red" style="font-size:15px">offline</font>';
+});
+</script>
+ <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+</div>
+</html>
+>>>>>>> trekkersfunbranch:pages/status.html
