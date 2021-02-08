@@ -1,229 +1,29 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
-
-<head>
-  <!-- Google Tag Manager -->
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-W6PVGLS');
-  </script>
-  <!-- End Google Tag Manager -->
-  <title>Hypnos</title>
-  <link rel="icon" href="./pages/images/512rounded.png">
-  <link rel="stylesheet" href="./pages/css/style.css">
-</head>
-
-<body link="#ffffff" vlink="#ffffff" alink="#66ccff" background-color="#0B384F">
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6PVGLS" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="navbar">
-    <div style="float: left;" class='round'>
-      <img src="./pages/images/64h.png" height="64" width="64">
+  <head>
+    <title>Hypnos</title>
+    <link rel="icon" href="./pages/images/512h.png">
+    <link rel="stylesheet" href="./pages/style.css">
+  </head>
+  <body link="#ffffff" vlink="#ffffff" alink="#66ccff" onload="myFunction()">
+    <div class="navbar">
+      <div style="float: left; left: 10px;">
+      <img style="border-radius: 15px;" src="./pages/images/512h.png" height="48" width="48">
+      </div>
+      <li><a href="./index.html" target="_self">HOME</a></li>
+      <li><a href="./pages/map.html" target="_self">MAP</a></li>
     </div>
-    <a href="./" target="_self">Home</a>
-    <a href="./pages/application.html" target="_self">Application</a>
-    <!--<a href="./pages/map.html" target="_self">Map</a>-->
-  </div>
-  <div class='logo'>
-    <p>
-      <img height="175px" width="440px" src="./pages/images/BannerV3.png" alt="Hypnos">
-    </p>
-  </div>
-  <br>
-  <br>
-  <div class='moto'>
-    Hypnos bestnos
-  </div>
-
-  <div class="boxedlinks">
-    <p style="font-size:16px">
-      If you would like to apply, please visit the <a href="./pages/application.html" target="_self">application</a>
-      tab to join the discord.
-    </p>
-    <h1 style="font-size:16px">Quick Links<br>
-      <a href="https://discordapp.com/widget?id=626974236753264664&theme=dark" target="_self">Hypnos Discord Server</a>
-      <blockquote class="imgur-embed-pub" lang="en" data-id="a/9sHzeGY"  ><a href="//imgur.com/a/9sHzeGY">Hypnos Imgur album (Updated 11/1/20)</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-    </h1>
-
-  </div>
-  <!--    <br>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
-<body>
-
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
--->
-</body>
-
+    <div style="display:block; margin-top: 8em;"></div>
+    <div class='logo'>
+      <p><img height="5%" width="34%" src="./pages/images/logo.png"></p>
+    </div>
+    <div style="display:block; margin-top: 2em;"></div>
+    <p>lazy</p>
+    <div style="display:block; margin-top: 2em;"></div>
+    <center>
+      <a href="//imgur.com/a/9sHzeGY">Imgur Album</a> <br>
+      <div style="display:block; margin-top: 2em;"></div>
+      <iframe src="https://discord.com/widget?id=626974236753264664&theme=dark" style="min-width: 300px; max-width: 450px;" width="20%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </center>
+  </body>
 </html>
