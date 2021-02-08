@@ -1,7 +1,7 @@
 @import "compass/css3";
 
 * {
-  font-family: Helvetica;
+  font-family: 'Lato', arial, serif;
 }
 
 body {
