@@ -3,26 +3,21 @@
 * {
   font-family: 'Lato', arial, serif;
 }
-
 body {
   background-color: #000000;
 }
-
 h1 {
   text-align: center;
   color: white;
 }
-
 h2 {
   text-align: center;
   color: white;
 }
-
 p {
   text-align: center;
   color: white;
 }
-
 .navbar {
   z-index: 1;
   overflow: hidden;
@@ -36,17 +31,14 @@ p {
   list-style-type: none;
   text-decoration: none;
 }
-
 .navbar a {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
 }
-
 .navbar a.active {
   color: white;
 }
-
 .navbar img {
   float: left;
   display: block;
@@ -55,37 +47,20 @@ p {
   text-decoration: none;
   font-size: 17px;
 }
-
-/* width */
 ::-webkit-scrollbar {
   width: 7px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 5px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: grey;
   border-radius: 5px;
 }
-
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: lightsteelblue;
 }
-
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
 li {
   padding: 0.9em 0.6em;
   text-decoration: none;
@@ -122,4 +97,16 @@ li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
   text-decoration: none;
+}
+.name {
+  display: inline-block;
+}
+.members {
+  color: white;
+  width: 300px;
+}
+.members img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
