@@ -99,15 +99,14 @@ li a:hover::after {
   transform-origin: left;
   text-decoration: none;
 }
-.name {
-  display: inline-block;
-}
 .members {
-  color: white;
-  width: 300px;
+  color:white;
+  display: inline-block;
+  max-width: 115px;
+  padding: 0.2em;
 }
 .members img {
-  height: 70px;
-  width: 70px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
 }
