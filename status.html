@@ -28,19 +28,19 @@
 				<b>CMP</b> status: <span class="server-online2"></span>!
 				</div><br>
 				<div class="server-status3">
-				<b>CMP 2</b> status: <span class="server-online3"></span>!
+				<b>OLD CMP</b> status: <span class="server-online3"></span>!
 				</div><br>
 				<div class="server-status4">
-				<b>SMP Copy</b> status: <span class="server-online4"></span>!
+				<b>SMPCOPY</b> status: <span class="server-online4"></span>!
 				</div><br>
 				<div class="server-status5">
 				<b>1.16.5</b> status: <span class="server-online5"></span>!
 				</div><br>
 				<div class="server-status6">
-				<b>SkyBlock</b> status: <span class="server-online6"></span>!
+				<b>SKYBLOCK</b> status: <span class="server-online6"></span>!
 				</div><br>
 				<div class="server-status7">
-				<b>Resurge CMP</b> status: <span class="server-online7"></span>!
+				<b>RESURGE CMP</b> status: <span class="server-online7"></span>!
 				</div>
 				<!--<div class="map-server">
 				<b>Map Server</b> status: <span class="map-online"></span>!
@@ -49,7 +49,7 @@
 					MinecraftAPI.getServerStatus('108.192.154.185', {
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online').innerHTML = status.online) {
 						document.querySelector('.server-online').innerHTML = 'online'
@@ -59,7 +59,7 @@
 					port: 25566 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status2').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online2').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online2').innerHTML = status.online) {
 						document.querySelector('.server-online2').innerHTML = 'online'
@@ -69,7 +69,7 @@
 					port: 25567 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-online3').innerHTML = '<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online3').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online3').innerHTML = status.online) {
 						document.querySelector('.server-online3').innerHTML = 'online'
@@ -79,7 +79,7 @@
 					port: 25568 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status4').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online4').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online4').innerHTML = status.online) {
 						document.querySelector('.server-online4').innerHTML = 'online'
@@ -89,7 +89,7 @@
 					port: 25569 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status5').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online5').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online5').innerHTML = status.online) {
 						document.querySelector('.server-online5').innerHTML = 'online'
@@ -99,7 +99,7 @@
 					port: 25571 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status6').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online6').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online6').innerHTML = status.online) {
 						document.querySelector('.server-online6').innerHTML = 'online'
@@ -109,7 +109,7 @@
 					port: 25570 // port
 					}, function (err, status) {
 					if (err) {
-					return document.querySelector('.server-status7').innerHTML ='<span style="color: red;">offline</span>';
+					return document.querySelector('.server-online7').innerHTML ='<span style="color: red;">offline</span>';
 					}
 					if (document.querySelector('.server-online7').innerHTML = status.online) {
 						document.querySelector('.server-online7').innerHTML = 'online'
