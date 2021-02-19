@@ -110,3 +110,63 @@ li a:hover::after {
   width: 90px;
   border-radius: 50%;
 }
+/* Don't ask about this shit */
+.status {
+  width: 250px;
+}
+.server-status {
+  color: white;
+  float: left;
+}
+.server-status2 {
+  color: white;
+  float: left;
+}
+.server-status3 {
+  color: white;
+  float: left;
+}
+.server-status4 {
+  color: white;
+  float: left;
+}
+.server-status5 {
+  color: white;
+  float: left;
+}
+.server-status6 {
+  color: white;
+  float: left;
+}
+.server-status7 {
+  color: white;
+  float: left;
+}
+.map-server {
+  color: white;
+  float: left;
+}
+.server-online {
+  color: #3CB371;
+}
+.server-online2 {
+  color: #3CB371;
+}
+.server-online3 {
+  color: #3CB371;
+}
+.server-online4 {
+  color: #3CB371;
+}
+.server-online5 {
+  color: #3CB371;
+}
+.server-online6 {
+  color: #3CB371;
+}
+.server-online7 {
+  color: #3CB371;
+}
+.map-online {
+  color: #3CB371;
+}

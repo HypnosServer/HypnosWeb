@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hypnos Status</title>
+    <link rel="icon" href="pages/images/favicon.png">
+    <link rel="stylesheet" href="pages/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  </head>
+    <body link="#ffffff" vlink="#ffffff" alink="#66ccff">
+      <div class="navbar">
+        <div style="float: left; border-radius: 45px;">
+        <img style="border-radius: 15px;" src="pages/images/64h.png" height="48" width="48">
+        </div>
+        <li><a href="../index" target="_self">HOME</a></li>
+        <li><a href="./about" target="_self">ABOUT</a></li>
+        <li><a href="./map" target="_self">MAP</a></li>
+      </div>
+	  <div style="display:block; margin-top: 3em;"></div>
+		<center>
+			<p>Status</p>
+			<div class="status">
+				<script src="https://mcapi.us/scripts/minecraft.js"></script>
+				<div class="server-status">
+				<b>SMP</b> status: <span class="server-online"></span>!
+				</div>
+				<div class="server-status2">
+				<b>CMP</b> status: <span class="server-online2"></span>!
+				</div>
+				<div class="server-status3">
+				<b>CMP 2</b> status: <span class="server-online3"></span>!
+				</div>
+				<div class="server-status4">
+				<b>SMP Copy</b> status: <span class="server-online4"></span>!
+				</div>
+				<div class="server-status5">
+				<b>1.16.5</b> status: <span class="server-online5"></span>!
+				</div>
+				<div class="server-status6">
+				<b>SkyBlock</b> status: <span class="server-online6"></span>!
+				</div>
+				<div class="server-status7">
+				<b>Resurge CMP</b> status: <span class="server-online7"></span>!
+				</div>
+				<!--<div class="map-server">
+				<b>Map Server</b> status: <span class="map-online"></span>!
+				</div>-->
+				<script>
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online').innerHTML = status.online) {
+						document.querySelector('.server-online').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25566 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status2').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online2').innerHTML = status.online) {
+						document.querySelector('.server-online2').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25567 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-online3').innerHTML = '<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online3').innerHTML = status.online) {
+						document.querySelector('.server-online3').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25568 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status4').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online4').innerHTML = status.online) {
+						document.querySelector('.server-online4').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25569 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status5').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online5').innerHTML = status.online) {
+						document.querySelector('.server-online5').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25571 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status6').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online6').innerHTML = status.online) {
+						document.querySelector('.server-online6').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25570 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-status7').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online7').innerHTML = status.online) {
+						document.querySelector('.server-online7').innerHTML = 'online'
+					} 
+					});
+				</script>
+			</div>
+		</center>
+    </body>
+</html>
