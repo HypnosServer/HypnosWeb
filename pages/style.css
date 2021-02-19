@@ -112,7 +112,7 @@ li a:hover::after {
 }
 /* Don't ask about this shit */
 .status {
-  width: 155px;
+  width: 200px;
 }
 .server-status {
   color: white;
