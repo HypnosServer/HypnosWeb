@@ -18,29 +18,32 @@
       </div>
 	  <div style="display:block; margin-top: 3em;"></div>
 		<center>
-			<p>Status</p>
+			<p>Network Status</p>
 			<div class="status">
 				<script src="https://mcapi.us/scripts/minecraft.js"></script>
 				<div class="server-status">
-				<b>SMP</b> status: <span class="server-online"></span>!
+				<b>SMP</b> status: <span class="server-online"></span>
 				</div><br>
 				<div class="server-status2">
-				<b>CMP</b> status: <span class="server-online2"></span>!
+				<b>CMP</b> status: <span class="server-online2"></span>
 				</div><br>
 				<div class="server-status3">
-				<b>OLD CMP</b> status: <span class="server-online3"></span>!
+				<b>CMP2</b> status: <span class="server-online3"></span>
 				</div><br>
 				<div class="server-status4">
-				<b>SMPCOPY</b> status: <span class="server-online4"></span>!
+				<b>SMPCopy</b> status: <span class="server-online4"></span>
 				</div><br>
 				<div class="server-status5">
-				<b>1.16.5</b> status: <span class="server-online5"></span>!
+				<b>1.16.5</b> status: <span class="server-online5"></span>
 				</div><br>
 				<div class="server-status6">
-				<b>SKYBLOCK</b> status: <span class="server-online6"></span>!
+				<b>SkyBlock</b> status: <span class="server-online6"></span>
 				</div><br>
 				<div class="server-status7">
-				<b>RESURGE CMP</b> status: <span class="server-online7"></span>!
+				<b>ResurgeCMP</b> status: <span class="server-online7"></span>
+				</div>
+				<div class="server-status8">
+				<b>MusicSMP</b> status: <span class="server-online8"></span>
 				</div>
 				<!--<div class="map-server">
 				<b>Map Server</b> status: <span class="map-online"></span>!
@@ -113,6 +116,16 @@
 					}
 					if (document.querySelector('.server-online7').innerHTML = status.online) {
 						document.querySelector('.server-online7').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25572 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-online8').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online8').innerHTML = status.online) {
+						document.querySelector('.server-online8').innerHTML = 'online'
 					} 
 					});
 				</script>

@@ -112,7 +112,7 @@ li a:hover::after {
 }
 /* Don't ask about this shit */
 .status {
-  width: 200px;
+  width: 220px;
 }
 .server-status {
   color: white;
@@ -142,6 +142,10 @@ li a:hover::after {
   color: white;
   float: left;
 }
+.server-status8 {
+  color: white;
+  float: left;
+}
 .map-server {
   color: white;
   float: left;
@@ -165,6 +169,9 @@ li a:hover::after {
   color: #3CB371;
 }
 .server-online7 {
+  color: #3CB371;
+}
+.server-online8 {
   color: #3CB371;
 }
 .map-online {
