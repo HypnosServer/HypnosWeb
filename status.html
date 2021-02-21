@@ -45,6 +45,9 @@
 				<div class="server-status8">
 				<b>MusicSMP</b> status: <span class="server-online8"></span>
 				</div>
+				<div class="server-status9">
+				<b>amogus</b> status: <span class="server-online9"></span>
+				</div>
 				<script>
 					MinecraftAPI.getServerStatus('108.192.154.185', {
 					}, function (err, status) {
@@ -117,6 +120,16 @@
 					});
 					MinecraftAPI.getServerStatus('108.192.154.185', {
 					port: 25572 // port
+					}, function (err, status) {
+					if (err) {
+					return document.querySelector('.server-online8').innerHTML ='<span style="color: red;">offline</span>';
+					}
+					if (document.querySelector('.server-online8').innerHTML = status.online) {
+						document.querySelector('.server-online8').innerHTML = 'online'
+					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+					port: 25573 // port
 					}, function (err, status) {
 					if (err) {
 					return document.querySelector('.server-online8').innerHTML ='<span style="color: red;">offline</span>';
