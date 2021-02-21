@@ -146,9 +146,8 @@ li a:hover::after {
   color: white;
   float: left;
 }
-.map-server {
+.music-status {
   color: white;
-  float: left;
 }
 .server-online {
   color: #3CB371;
@@ -174,6 +173,6 @@ li a:hover::after {
 .server-online8 {
   color: #3CB371;
 }
-.map-online {
+.music-online {
   color: #3CB371;
 }
