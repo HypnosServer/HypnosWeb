@@ -1,13 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
+    <style> 
+      body{
+        background-color: rgb(109, 59, 37);
+        background-image: url('./pages/images/background.png');
+      }
+      
+    </style>
     <title>Hypnos</title>
     <link rel="icon" href="./pages/images/favicon.png">
     <link rel="stylesheet" href="./pages/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   </head>
-  <body link="#ffffff" vlink="#ffffff" alink="#66ccff" onload="myFunction()">
+  <body onload="myFunction()" link="#ffffff" vlink="#ffffff" alink="#66ccff" onload="myFunction()">
     <div class="navbar">
       <div style="float: left; left: 10px;">
       <img style="border-radius: 15px;" src="./pages/images/512h.png" height="48" width="48">
@@ -16,17 +23,30 @@
       <li><a href="./pages/about" target="_self">ABOUT</a></li>
       <li><a href="./pages/map" target="_self">MAP</a></li>
     </div>
-    <div style="display:block; margin-top: 8em;"></div>
-    <div class='logo'>
-      <p><img height="5%" width="34%" src="./pages/images/logo.png"></p>
+    <div style="display:block; margin-top: 4em;"></div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <div class='logo'>
+        <p><img height="5%" width="34%" src="./pages/images/logo.png"></p>
+      </div>
+      <div style="display:block; margin-top: 1em;"></div>
+      <center>
+        
+          <a href="//imgur.com/a/9sHzeGY">Imgur Album</a>
+          <div style="display:block; margin-top: 1em;"></div>
+          <a href="http://hypnos.shit.vc:5000/#world_isometric_day/0/20/25/272/64" target="_blank">Click to view server map</a>
+          <div style="display:block; margin-top: 1em;"></div>
+          <iframe src="https://discord.com/widget?id=626974236753264664&theme=dark" style="min-width: 300px; max-width: 450px;" width="20%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </center>
     </div>
-    <div style="display:block; margin-top: 2em;"></div>
-    <center>
-      <a href="//imgur.com/a/9sHzeGY">Imgur Album</a>
-      <div style="display:block; margin-top: 1em;"></div>
-      <a href="http://hypnos.shit.vc:5000/#world_isometric_day/0/20/25/272/64" target="_blank">Click to view server map</a>
-      <div style="display:block; margin-top: 1em;"></div>
-      <iframe src="https://discord.com/widget?id=626974236753264664&theme=dark" style="min-width: 300px; max-width: 450px;" width="20%" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </center>
+    <script>
+      var myVar;
+      function myFunction() {
+        myVar = setTimeout(showPage, 650);
+      }
+      function showPage() {
+        document.getElementById("myDiv").style.display = "block";
+      }
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
   </body>
 </html>
