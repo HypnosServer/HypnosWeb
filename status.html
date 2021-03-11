@@ -26,34 +26,50 @@
 			<p>Network Status</p>
 			<div class="status">
 				<script src="https://mcapi.us/scripts/minecraft.js"></script>
+				<div class="SubDomain-status">
+					<b>SubDomain</b> status: <span class="domain-online"></span>
+				</div><br>
 				<div class="server-status">
-				<b>SMP</b> status: <span class="server-online"></span>
+					<b>SMP</b> status: <span class="server-online"></span>
 				</div><br>
 				<div class="server-status2">
-				<b>CMP</b> status: <span class="server-online2"></span>
+					<b>CMP</b> status: <span class="server-online2"></span>
 				</div><br>
 				<div class="server-status3">
-				<b>CMP2</b> status: <span class="server-online3"></span>
+					<b>CMP2</b> status: <span class="server-online3"></span>
+				</div><br>
+				<div class="server-status10">
+					<b>CMP3</b> status: <span class="server-online10"></span>
 				</div><br>
 				<div class="server-status4">
-				<b>SMPCopy</b> status: <span class="server-online4"></span>
+					<b>SMPCopy</b> status: <span class="server-online4"></span>
 				</div><br>
 				<div class="server-status5">
-				<b>1.16.5</b> status: <span class="server-online5"></span>
+					<b>1.16.5</b> status: <span class="server-online5"></span>
 				</div><br>
 				<div class="server-status6">
-				<b>SkyBlock</b> status: <span class="server-online6"></span>
+					<b>SkyBlock</b> status: <span class="server-online6"></span>
 				</div><br>
 				<div class="server-status7">
-				<b>ResurgeCMP</b> status: <span class="server-online7"></span>
+					<b>ResurgeCMP</b> status: <span class="server-online7"></span>
 				</div>
 				<div class="server-status8">
-				<b>MusicSMP</b> status: <span class="server-online8"></span>
+					<b>MusicSMP</b> status: <span class="server-online8"></span>
 				</div>
 				<div class="server-status9">
-				<b>amogus</b> status: <span class="server-online9"></span>
+					<b>amogus</b> status: <span class="server-online9"></span>
 				</div>
 				<script>
+					MinecraftAPI.getServerStatus('hypnos.shit.vc', {
+						port: 25565 // port
+					}, function (err, status) {
+						if (err) {
+							return document.querySelector('.domain-online').innerHTML ='<span style="color: red;">offline</span>';
+						}
+						if (document.querySelector('.domain-online').innerHTML = status.online) {
+							document.querySelector('.domain-online').innerHTML = 'online'
+						}
+					});
 					MinecraftAPI.getServerStatus('108.192.154.185', {
 					}, function (err, status) {
 					if (err) {
@@ -142,6 +158,16 @@
 					if (document.querySelector('.server-online9').innerHTML = status.online) {
 						document.querySelector('.server-online9').innerHTML = 'online'
 					} 
+					});
+					MinecraftAPI.getServerStatus('108.192.154.185', {
+						port: 25564 // port
+					}, function (err, status) {
+						if (err) {
+							return document.querySelector('.server-online10').innerHTML ='<span style="color: red;">offline</span>';
+						}
+						if (document.querySelector('.server-online10').innerHTML = status.online) {
+							document.querySelector('.server-online10').innerHTML = 'online'
+						}
 					});
 				</script>
 			</div>

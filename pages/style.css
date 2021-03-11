@@ -111,6 +111,10 @@ li a:hover::after {
 .status {
   width: 220px;
 }
+.SubDomain-status {
+  color: white;
+  float: left;
+}
 .server-status {
   color: white;
   float: left;
@@ -147,8 +151,15 @@ li a:hover::after {
   color: white;
   float: left;
 }
+.server-status10 {
+  color: white;
+  float: left;
+}
 .music-status {
   color: white;
+}
+.domain-online {
+  color: #3CB371;
 }
 .server-online {
   color: #3CB371;
@@ -175,6 +186,9 @@ li a:hover::after {
   color: #3CB371;
 }
 .server-online9 {
+  color: #3CB371;
+}
+.server-online10 {
   color: #3CB371;
 }
 .music-online {
