@@ -18,7 +18,7 @@ main {
     margin: 0;
   }
 
-  .icon img {
+  .banner img {
     @include slide-in-from-bottom(0);
 
     max-width: 500px;
