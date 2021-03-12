@@ -1,0 +1,7 @@
+@use "./abstracts/mixins";
+
+.header {
+  @include mixins.reset_anchor;
+
+  position: absolute;
+}
