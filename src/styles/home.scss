@@ -1,9 +1,37 @@
+@use "abstracts/colors";
+@use "abstracts/animations" as *;
+
 main {
   height: 100%;
   background: url("../assets/background.png") center no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: colors.$white;
+
+  article {
+    text-align: center;
+  }
 
   h1 {
     margin: 0;
+  }
+
+  .icon img {
+    @include slide-in-from-bottom(0);
+
+    max-width: 500px;
+    width: 90%;
+  }
+
+  iframe {
+    @include slide-in-from-bottom(1.2);
+
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 450px;
+    width: 20%;
+    height: 500px;
   }
 }
