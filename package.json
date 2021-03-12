@@ -1,0 +1,17 @@
+{
+	"name": "hypnos-web",
+	"version": "1.0.0",
+	"description": "hypnis",
+	"repository": "https://github.com/HypnosServer/HypnosWeb.git",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "parcel src/*.html"
+	},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	},
+	"dependencies": {
+		"compass": "^0.1.1"
+	}
+}
