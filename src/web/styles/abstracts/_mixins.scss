@@ -4,3 +4,8 @@
     text-decoration: none;
   }
 }
+
+@mixin background($image) {
+  background: url("/assets/" + $image) center no-repeat fixed;
+  background-size: cover;
+}

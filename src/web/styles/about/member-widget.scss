@@ -1,0 +1,23 @@
+@use "../abstracts/fonts";
+@use "../abstracts/colors";
+
+.member-widget {
+  display: flex;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .profile-picture img {
+    clip-path: circle();
+    width: 100%;
+  }
+
+  h2 {
+    margin: 8px 0 0;
+    font-family: fonts.$default;
+    font-size: 18px;
+    color: colors.$white;
+    font-weight: 400;
+  }
+}

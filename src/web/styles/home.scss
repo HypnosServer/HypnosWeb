@@ -1,10 +1,11 @@
 @use "abstracts/colors";
+@use "abstracts/mixins";
 @use "abstracts/animations" as *;
 
 main {
+  @include mixins.background("background.png");
+
   height: 100%;
-  background: url("../assets/background.png") center no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,0 +1,23 @@
+@use "../abstracts/mixins";
+@use "../header";
+
+.members {
+  @include mixins.background("slimefarm.png");
+
+  height: 100%;
+  padding-top: header.$header-height;
+
+  .member-list {
+    margin: auto;
+    width: 80%;
+    max-width: 500px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .member-widget {
+      margin: 25px;
+    }
+  }
+}
