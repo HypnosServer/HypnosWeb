@@ -1,19 +1,18 @@
+require 'yaml'
+
+$config = YAML::load_file 'api-config.yml'
+
 require 'discordrb'
-require 'dotenv'
-require_relative 'api_server'
 
-Dotenv.load
+$bot = Discordrb::Bot.new token: $config['token']
 
-app = ApiServer.new
+$bot.ready do
+  puts 'Connected to the Discord API'
 
-unless $bot
-  $bot = Discordrb::Bot.new token: ENV["TOKEN"]
+  require_relative 'api_server'
 
-  $bot.ready do
-    puts 'Connected to the Discord API'
-
-    app.run!
-  end
-
-  $bot.run
+  app = ApiServer.new
+  app.run!
 end
+
+$bot.run

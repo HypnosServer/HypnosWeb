@@ -1,8 +1,8 @@
-@use "header";
+@use "abstracts/mixins";
 
 .map {
   height: 100%;
-  padding-top: header.$header-height;
+  padding-top: mixins.$header-height;
   overflow: hidden;
 
   iframe {

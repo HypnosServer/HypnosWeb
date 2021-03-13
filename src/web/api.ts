@@ -3,7 +3,10 @@ export interface GET_Member {
 	username: string
 }
 
-export type GET_Members = GET_Member[]
+export interface GET_Server {
+	name:   string,
+	online: boolean
+}
 
 export module API {
 	export const host =

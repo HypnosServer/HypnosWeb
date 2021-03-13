@@ -1,16 +1,16 @@
 require 'discordrb'
 
-module MemberList
-  def MemberList.fetch
+class MemberList
+  def self.fetch
     # @type [Discordrb::Server]
-    server = $bot.servers[ENV["GUILD_ID"].to_i]
+    server = $bot.servers[$config['guild_id'].to_i]
 
     server.members
-      .filter{ |m| m.role? ENV["MEMBER_ROLE_ID"].to_i }
+      .filter{ |m| m.role? $config['member_role_id'].to_i }
       .map{ |m| format m }
   end
 
-  def MemberList.format(member)
+  def self.format(member)
     {
       :avatar   => member.avatar_url(:png),
       :username => member.username

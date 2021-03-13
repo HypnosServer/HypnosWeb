@@ -1,14 +1,15 @@
 require 'sinatra/base'
 require 'sinatra/cross_origin'
-require_relative 'member_list'
+require_relative 'data/member_list'
 require 'json'
+require_relative 'data/status_list'
 
 class ApiServer
   def initialize
     @app = Sinatra.new do
       configure do
         enable :cross_origin
-        set :port, ENV["PORT"] || 4567
+        set :port, $config['port'] || 4567
       end
 
       before do
@@ -18,6 +19,10 @@ class ApiServer
 
       get '/members' do
         MemberList.fetch.to_json
+      end
+
+      get '/status' do
+        StatusList.get.to_json
       end
     end
   end

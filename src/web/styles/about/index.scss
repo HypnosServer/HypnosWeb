@@ -2,13 +2,11 @@
 @use "../abstracts/fonts";
 @use "../abstracts/colors";
 @use "../abstracts/animations";
-@use "../header";
 
 .members {
   @include mixins.background("slimefarm.png");
 
-  height: 100%;
-  padding-top: header.$header-height + 25px;
+  padding-top: mixins.$header-height + 25px;
   font-family: fonts.$default;
   color: colors.$white;
   font-size: 18px;

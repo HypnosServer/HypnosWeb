@@ -1,3 +1,5 @@
+$header-height: 70px;
+
 @mixin reset_anchor {
   a {
     color: inherit;
@@ -8,4 +10,6 @@
 @mixin background($image) {
   background: url("/assets/" + $image) center no-repeat fixed;
   background-size: cover;
+  padding-top: $header-height;
+  height: 100%;
 }

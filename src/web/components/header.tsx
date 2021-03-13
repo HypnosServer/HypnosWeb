@@ -9,9 +9,10 @@ export function Header() {
 		<div className="header">
       <img className="icon" alt="hypnos icon" src={icon}/>
 
-			<Link to="/">Home</Link>
-      <Link to="/about">About</Link>
-      <Link to="/map">Map</Link>
+			<Link to="/">      Home  </Link>
+      <Link to="/about"> About </Link>
+      <Link to="/status">Status</Link>
+      <Link to="/map">   Map   </Link>
 		</div>
 	);
 }

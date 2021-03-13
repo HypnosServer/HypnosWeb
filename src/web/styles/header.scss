@@ -2,15 +2,13 @@
 @use "abstracts/fonts";
 @use "abstracts/colors";
 
-$header-height: 70px;
-
 .header {
   @include mixins.reset_anchor;
 
   $spacing: 30px;
 
   width: 100%;
-  height: $header-height;
+  height: mixins.$header-height;
   position: absolute;
   display: flex;
   align-items: center;
