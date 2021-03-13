@@ -6,7 +6,7 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"dev": "parcel src/index.html"
+		"dev": "parcel src/web/index.html"
 	},
 	"devDependencies": {
 		"@types/react": "^17.0.3",

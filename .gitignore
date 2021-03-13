@@ -9,3 +9,9 @@ dist
 
 # macOS
 .DS_Store
+
+# lock
+Gemfile.lock
+
+# config
+.env
