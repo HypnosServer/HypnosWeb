@@ -26,6 +26,8 @@ RUN rm -rf ./*
 
 COPY ./docker/web/default.conf /etc/nginx/conf.d/default.conf
 
+COPY static/ ./
+
 COPY --from=builder /build/dist .
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
