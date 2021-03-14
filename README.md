@@ -15,13 +15,18 @@ $ yarn install
 $ bundle install
 ```
 
-
 #### Frontend
 To run the frontend in a development environment, run:
 ```shell
 $ yarn dev
 ```
 and connect to `http://localhost:1234/`.
+
+The React app is to be found under `src/web`; this is what will be served and watched
+with the previous command.
+
+Files in the `static` folder won't be bundled in the production environment but
+will still be served.
 
 #### Backend
 ❗️You don't need this if you are only going to contribute to the frontend.
