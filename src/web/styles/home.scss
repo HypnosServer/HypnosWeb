@@ -1,0 +1,38 @@
+@use "abstracts/colors";
+@use "abstracts/mixins";
+@use "abstracts/animations" as *;
+
+main {
+  @include mixins.background("background.png");
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: colors.$white;
+
+  article {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .banner img {
+    @include slide-in-from-bottom(0);
+
+    max-width: 500px;
+    width: 90%;
+  }
+
+  iframe {
+    @include slide-in-from-bottom(1.2);
+
+    margin-top: 30px;
+    min-width: 300px;
+    max-width: 450px;
+    width: 20%;
+    height: 500px;
+  }
+}

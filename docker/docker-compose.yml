@@ -1,0 +1,25 @@
+version: "3.0"
+
+services:
+  api:
+    build:
+      context: ..
+      dockerfile: docker/api/Dockerfile
+
+    ports:
+      - 4567:4567
+
+    volumes:
+      - /etc/hypnosweb:/app/config
+
+  web:
+    build:
+      context: ..
+      dockerfile: docker/web/Dockerfile
+    depends_on:
+      - api
+    links:
+      - api:api
+
+    ports:
+      - 80:80

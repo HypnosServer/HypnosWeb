@@ -1,0 +1,27 @@
+{
+	"name": "hypnos-web",
+	"version": "1.0.0",
+	"description": "hypnis",
+	"repository": "https://github.com/HypnosServer/HypnosWeb.git",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "parcel src/web/index.html",
+		"build": "parcel build src/web/index.html",
+		"deploy": "COMPOSE_PROJECT_NAME=hypnos_web docker-compose -f docker/docker-compose.yml up --build -d"
+	},
+	"devDependencies": {
+		"@types/react": "^17.0.3",
+		"@types/react-dom": "^17.0.2",
+		"@types/react-router-dom": "^5.1.7",
+		"parcel-bundler": "1.12.3",
+		"sass": "^1.32.8",
+		"typescript": "^4.2.3"
+	},
+	"dependencies": {
+		"compass": "^0.1.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-router-dom": "^5.2.0"
+	}
+}

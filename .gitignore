@@ -1,3 +1,18 @@
+# build
+node_modules
+dist
+.cache
 
-.project
-.vscode/launch.json
+# ide
+.vscode
+.idea
+
+# macOS
+.DS_Store
+
+# lock
+Gemfile.lock
+
+# config
+.env
+config

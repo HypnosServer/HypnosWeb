@@ -1,0 +1,19 @@
+@keyframes -anim-slide-in-from-bottom {
+  $slide: 60px;
+
+  from {
+    transform: translateY($slide);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@mixin slide-in-from-bottom($delay) {
+  $interval: .2s;
+
+  animation: -anim-slide-in-from-bottom .8s both ease ($delay * $interval);
+}

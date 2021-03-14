@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"jsx": "react",
+		"alwaysStrict": true,
+		"incremental": true,
+		"strict": true,
+		"allowSyntheticDefaultImports": true
+	}
+}

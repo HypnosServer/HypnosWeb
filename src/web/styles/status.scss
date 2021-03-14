@@ -1,0 +1,36 @@
+@use "abstracts/mixins";
+@use "abstracts/colors";
+@use "abstracts/fonts";
+@use "abstracts/animations";
+
+.status-page {
+  @include mixins.background("downaccel.png");
+
+  display: flex;
+  justify-content: center;
+  font-family: fonts.$default;
+
+  @each $key, $value in (
+    "online":  green,
+    "offline": red
+  ) {
+    .#{$key}-status {
+      color: $value;
+    }
+  }
+
+  ul {
+    @include animations.slide-in-from-bottom(0);
+
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    height: 0;
+  }
+
+  li.status {
+    color: colors.$white;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
