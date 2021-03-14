@@ -1,0 +1,71 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    daemons (1.3.1)
+    discordrb (3.4.0)
+      discordrb-webhooks (~> 3.3.0)
+      ffi (>= 1.9.24)
+      opus-ruby
+      rest-client (>= 2.0.0)
+      websocket-client-simple (>= 0.3.0)
+    discordrb-webhooks (3.3.0)
+      rest-client (>= 2.1.0.rc1)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.6)
+    event_emitter (0.2.6)
+    eventmachine (1.2.7)
+    ffi (1.15.0)
+    http-accept (1.7.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    mime-types (3.3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.0225)
+    minestat (2.0.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    netrc (0.11.0)
+    opus-ruby (1.0.1)
+      ffi
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    ruby2_keywords (0.0.4)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-cross_origin (0.4.0)
+    thin (1.8.0)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    tilt (2.0.10)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
+    websocket (1.2.9)
+    websocket-client-simple (0.3.0)
+      event_emitter
+      websocket
+
+PLATFORMS
+  x86_64-darwin-18
+
+DEPENDENCIES
+  discordrb
+  dotenv
+  minestat
+  sinatra
+  sinatra-cross_origin
+  thin
+
+BUNDLED WITH
+   2.2.3
