@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface GET_Member {
 	avatar:   string,
 	username: string
@@ -18,7 +20,13 @@ export module API {
 	export function fetch(uri: string, method: "GET" = "GET") {
 		return window.fetch(`${host}${uri}`, {
 			method,
-			mode: "cors"
+			mode: "cors",
+
+			// LITERALLY SPENT 3 HOURS ON THIS FUCKING THING
+			// The server/nginx will send a 403 Forbidden response code
+			// if the request doesn't include this header, for NO
+			// FUCKING REASON, i'm literally so heated right now. fuck this shit
+			referrerPolicy: "no-referrer"
 		});
 	}
 

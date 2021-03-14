@@ -6,7 +6,7 @@ class StatusList
 
   # Updates the statuses every 2 minutes,
   # instead of fetching them for every request which
-  # is obviously bad and slow.
+  # is obviously slow and inefficient.
   Thread.new do
     loop do
       @@cache = StatusList.fetch
@@ -22,7 +22,7 @@ class StatusList
     $config["servers"].map do |s|
       server = MineStat.new s["host"], s["port"], 1
 
-      { :online => server.online, :name => s["name"]}
+      { :online => server.online, :name => s["name"] }
     end
   end
 end

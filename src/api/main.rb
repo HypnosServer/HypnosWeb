@@ -1,6 +1,6 @@
 require 'yaml'
 
-$config = YAML::load_file 'api-config.yml'
+$config = YAML::load_file 'config/api-config.yml'
 
 require 'discordrb'
 

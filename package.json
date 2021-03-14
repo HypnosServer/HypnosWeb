@@ -6,7 +6,9 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"dev": "parcel src/web/index.html"
+		"dev": "parcel src/web/index.html",
+		"build": "parcel build src/web/index.html",
+		"deploy": "COMPOSE_PROJECT_NAME=hypnos_web docker-compose -f docker/docker-compose.yml up --build -d"
 	},
 	"devDependencies": {
 		"@types/react": "^17.0.3",
