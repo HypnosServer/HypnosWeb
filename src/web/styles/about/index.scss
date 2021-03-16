@@ -6,6 +6,7 @@
 .members {
   @include mixins.background("slimefarm.png");
 
+  height: unset;
   padding-top: mixins.$header-height + 25px;
   font-family: fonts.$default;
   color: colors.$white;
